@@ -82,7 +82,15 @@ header {
 }
 
 /* ------------------BODY------------------ */
+#underline-title {
+  z-index: -1;
+  height: 31px;
+  width: 60vw;
+  background-color: #72FDC1;
+}
+
 #title {
+  z-index: 1;
   margin-left: 59px;
   font-family: "Steradian-bold";
   padding-top: 160px;
@@ -100,4 +108,37 @@ header {
   font-size: 1.97vw;
   line-height: 1.2em;
   width: 50vw;
+}
+
+#btn-container {
+  width: 40vw;
+  margin-left: 59px;
+  padding-top: 80px;
+}
+
+#button-ios {
+  margin: 0 1.47em 1.47em 0;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-family: "Steradian-bold";
+  font-size: 17px;
+  box-sizing: border-box;
+  letter-spacing: 0.002em;
+  border-radius: 1.76em;
+  padding: 1.13em 2.35em;
+  background: #000000;
+}
+
+#button-android {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-family: "Steradian-bold";
+  font-size: 17px;
+  box-sizing: border-box;
+  letter-spacing: 0.002em;
+  border-radius: 1.76em;
+  padding: 1.13em 2.35em;
+  background: #000000;
 }
