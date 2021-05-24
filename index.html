@@ -1,51 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-  <link rel="stylesheet" type="text/css" href="style_homepage.css" media="screen" />
+  <title></title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
   <header>
     <img class="logo" src="assets/logo/Logo_splace.png">
     <nav>
-      <ul class="nav-area">
-        <li><a href="#">Per chi lavora</a></li>
-        <li><a href="#">Per chi offre spazi</a></li>
-      </ul>
+      <li><a href="#">Per chi lavora</a></li>
+      <li><a href="#about">Per chi offre spazi</a></li>
     </nav>
-    <a href="#" class="btn-area">Accedi</a>
+      <a href="#" class="login-btn">Accedi</a>
   </header>
 
-<section class="banner-area">
-  <div class="banner-img"></div>
+  <section class="banner-area">
+    <div class="banner-img"></div>
     <h1>Il tuo lavoro.<br>Dove vuoi, con chi vuoi.</h1>
+    <div class="break"></div>
     <h3>L’unico servizio per lavoratori in smart working<br>che permette lo sviluppo di microcomunità,<br>attraverso parternship con strutture locali e privati.</h3>
+    <div class="btn-container">
     <a href="#" class="banner-btn">Scarica su iOS</a>
     <a href="#" class="banner-btn">Scarica su Android</a>
+  </div>
+  </section>
 
-</section>
+  <section class="service-area" id="services">
+    <ul class="services-content">
+      <li>
+        <img src="assets/features/img_list1.png">
+        <h4>Personalizza</h4>
+        <p>Fatti guidare dai tuoi interessi e dalle tue esigenze! Trova nuovi spazi e conosci persone simili a te.</p>
+      </li>
+      <li>
+        <img src="assets/features/img_list2.png">
+        <h4>Organizza</h4>
+        <p>Lasciati ispirare e cambia spazio ogni giorno. Gestisci le tue prenotazioni e organizza la tua settimana in base alle tue necessità.</p>
+      </li>
+      <li>
+        <img src="assets/features/img_list3.png">
+        <h4>Condividi</h4>
+        <p>Esplora gli spazi e condividili con la tua comunità per rivoluzionare lo smartworking e sperimentare una nuova modalità di lavoro a distanza.</p>
+      </li>
+      <li>
+        <img src="assets/features/img_list4.png">
+        <h4>Partecipa</h4>
+        <p>Scopri le attività proposte dagli host e cerca quelle più affini ai tuoi interessi per concederti una pausa dal lavoro.</p>
+      </li>
+    </ul>
 
-<!-- <div class="container-landing">
-  <img class ="hero" src="assets/home/hero1.jpeg">
-  <div class="container-left">
-<div class="box-title" id="title">Il tuo lavoro.<br> Dove vuoi, con chi vuoi.
-</div>
-<div class="box-title" id="underline-title"></div>
-<div id="body-text">L’unico servizio per lavoratori in smart working<br>che permette lo sviluppo di microcomunità, attraverso parternship con strutture locali e privati.</div>
-<div id="btn-container">
-  <a href="#" id="button-ios">Scarica per iOS</a>
-  <a href="#" id="button-android">Scarica per Android</a>
-</div>
-</div>
-</div> -->
+  </section>
+
+  <section class="about-area" id="about">
+    <h3 class="section-title">AMOGUS</h3>
+    <ul class="about-content">
+      <li class="about-left"></li>
+      <li class="about-right">
+        <h2>About our Company</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="#" class="about-btn">Learn more</a>
+      </li>
+    </ul>
+  </section>
 
 
-  <script language="JavaScript" type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-  <script type="text/javascript" src="js/homepage.js"></script>
+  <section class="contact-area" id="contact">
+    <h3 class="section-title">Contact</h3>
+    <ul class="contact-content">
+      <li>
+        <i class="fa fa-map-marker"></i>
+        <p>Via Candiani 123,<br> Milano, Italia</p>
+      </li>
+      <li>
+        <i class="fa fa-phone"></i>
+        <p>+123 456 789 <br> +789 456 123</p>
+      </li>
+      <li>
+        <i class="fa fa-envelope"></i>
+        <p>info@splace.com<br> splace.com</p>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>All Right Reserved by Splace</p>
+  </footer>
 </body>
 
 </html>

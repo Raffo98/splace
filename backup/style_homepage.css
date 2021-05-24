@@ -153,6 +153,7 @@ section p{
 }
 
 @media (max-width: 1366px) {
+  
   .banner-area{
     min-height: 600px;
   }
