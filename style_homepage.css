@@ -42,6 +42,8 @@ header {
   border-radius: 0px 0px 30px 30px;
   padding-right: 59px;
   padding-left: 59px;
+  position: relative;
+  z-index: 2;
 }
 
 .logo {
@@ -82,15 +84,36 @@ header {
 }
 
 /* ------------------BODY------------------ */
-#underline-title {
-  z-index: -1;
-  height: 31px;
+.container-landing{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  position: relative;
+}
+
+.container-left {
   width: 60vw;
+  flex-direction: column;
+}
+
+.box-title {
+  position: relative;
+}
+
+#underline-title {
+  margin: 50px;
+  z-index: 1;
+  top: -7.4em;
+  box-sizing: border-box;
+  height: 3em;
+  width: 57vw;
   background-color: #72FDC1;
 }
 
 #title {
-  z-index: 1;
+  z-index: 2;
   margin-left: 59px;
   font-family: "Steradian-bold";
   padding-top: 160px;
@@ -141,4 +164,19 @@ header {
   border-radius: 1.76em;
   padding: 1.13em 2.35em;
   background: #000000;
+}
+
+#hero-container {
+  position: relative;
+  z-index: 1;
+  margin-right: 59px;
+  top: -160px;
+  left: -50px;
+  height: 100vh;
+  align-items: center;
+}
+
+.hero-img {
+  max-width: 120%;
+  max-height: 100%;
 }
