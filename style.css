@@ -64,6 +64,8 @@ header nav {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  position: absolute;
+  padding-left: 273px;
 }
 
 header nav li {
@@ -90,7 +92,14 @@ a.login-btn {
 
 @media (max-width:1000px) {
   header {
-    padding: 20px 50px;
+    /* padding: 20px 50px; */
+  }
+}
+
+@media (max-width:900px) {
+  header nav {
+    position: relative;
+    padding-left: 0;
   }
 }
 
@@ -147,7 +156,7 @@ section p {
 }
 
 .banner-area .banner-img {
-  background-image: url("assets/home/hero1.jpeg");
+  background-image: url("assets/home/hero.png");
   position: absolute;
   top: 0;
   left: 0;
@@ -158,22 +167,26 @@ section p {
   z-index: -1;
 }
 
-.banner-area .banner-img:after {
+/* .banner-area .banner-img:after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
-  opacity: .2;
-}
+  background-color: #fff;
+  opacity: 1;
+} */
 
 .banner-area h1 {
+  display: inline;
   margin-bottom: 15px;
   font-size: 84px;
   line-height: 1em;
   font-family: "Steradian-bold";
+  /* background-image: linear-gradient(360deg, rgba(114,253,193,1) 30%, rgba(114,253,193,0) 30%); */
+  background-image: linear-gradient(#fff 60%, #72FDC1 30%, #fff 60%);
+
 }
 
 .banner-area h3 {
