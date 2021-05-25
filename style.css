@@ -91,8 +91,8 @@ a.login-btn {
 }
 
 @media (max-width:1000px) {
-  header {
-    /* padding: 20px 50px; */
+  header nav li{
+    margin: 0 30px;
   }
 }
 
@@ -100,6 +100,10 @@ a.login-btn {
   header nav {
     position: relative;
     padding-left: 0;
+  }
+
+  header nav li{
+    margin: 0 20px;
   }
 }
 
@@ -212,22 +216,62 @@ section p {
   margin-right: 15px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1366px) {
   .banner-area {
-    min-height: 600px;
+    min-height: 800px;
   }
 
   .banner-area h1 {
-    font-size: 32px;
+    font-size: 65px;
   }
 
   .banner-area h3 {
-    font-size: 20px;
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner-area {
+    min-height: 650px;
+  }
+
+  .banner-area h1 {
+    font-size: 48px;
+    padding-top: 65px;
+    background-image: linear-gradient(#fff 76%, #72FDC1 30%);
+  }
+
+  .banner-area h3 {
+    font-size: 16px;
+    padding-top: 15px;
+  }
+
+  .banner-area .btn-container {
+    padding-top: 25px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .banner-area {
+    min-height: 550px;
+  }
+
+  .banner-area h1 {
+    font-size: 40px;
+  }
+
+  .banner-area h3 {
+    font-size: 16px;
   }
 
   .banner-area a.banner-btn {
     padding: 15px 40px;
     margin-bottom: 15px;
+  }
+
+  .banner-area .btn-container {
+    padding-top: 48px;
   }
 }
 
@@ -411,15 +455,74 @@ ul.contact-content{
 
 footer{
   width: 100%;
+  min-height: 300px;
+  color: #fff;
+  background-color: #000;
+  padding: 60px 0;
+}
+
+.logo-footer-container {
+  flex-basis: 30%;
+}
+
+.logo-footer {
+  cursor: pointer;
+  width: 225px;
+  height: 62.19px;
+  margin-left: 59px;
+}
+
+ ul.footer-content{
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  background-color: #000;
-  padding: 60px 0;
+  margin-right: 59px;
+  /* flex-wrap: wrap; */
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-content h4{
+  font-family: "Steradian-bold";
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.footer-content p{
+  font-family: "Steradian-regular";
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+li a{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-btn {
+  padding-top: 70px;
+  font-family: "Steradian-bold";
+  color: #000;
+  padding: 15px 35px;
+  background: #fff;
+  border-radius: 30px;
+  margin-right: 15px;
+}
+
+#ios-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#copyright {
+  padding-top: 25px;
+  margin-left: 59px;
+  font-family: "Steradian-regular";
+  font-size: 16px;
 }
