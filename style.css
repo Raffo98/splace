@@ -109,7 +109,7 @@ a.login-btn {
 
 @media (max-width:700px) {
   header {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   header h3 {
@@ -117,7 +117,7 @@ a.login-btn {
   }
 
   header nav li {
-    margin: 0 7px;
+    /* margin: 0 px; */
   }
 }
 
