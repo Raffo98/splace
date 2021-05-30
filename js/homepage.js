@@ -1,4 +1,15 @@
-const logo = document.getElementsByClassName("logo")[0];
+const toogleButton = document-getElementsByClassName('navbar-toggle')[0];
+const navbarText = document-getElementsByClassName('navbarText');
+toggleButton.addEventListener('click', function() {
+  for(var i=0; i<navbarText.lenght; i++)
+  navbarText[i]. classList.toggle('active');
+});
+
+
+
+
+
+/*const logo = document.getElementsByClassName("logo")[0];
 const toggle = document.getElementsByClassName("toggle")[0];
 const menu = document.querySelector(".menu");
 
@@ -31,4 +42,4 @@ function logoreduced(x) {
 
 var x = window.matchMedia("(max-width: 750px)")
 logoreduced(x) // Call listener function at run time
-x.addListener(logoreduced) // Attach listener function on state changes
+x.addListener(logoreduced) // Attach listener function on state changes*/

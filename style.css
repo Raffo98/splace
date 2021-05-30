@@ -90,6 +90,16 @@ a.login-btn {
 .navbar-toggle {
   display: none;
 }
+.navbarText:hover{
+  background-color: #72FDC1;
+}
+header nav li:hover a{
+  color: #000;
+}
+.navbar-toggle:hover{
+  background-color: #72FDC1;
+  color: #000;
+}
 
 @media (max-width:1000px) {
   header nav li {
@@ -122,24 +132,24 @@ a.login-btn {
 }
 /* MOBILE MENU */
 @media (max-width: 600px) {
-  header nav {
+
+  .subMenu{
     flex-wrap: wrap;
   }
 
   .navbar-toggle {
     display: block;
     padding: 50px;
-
   }
 
-  header nav {
+  .navbarText{
     display: none;
     width: 100;
     text-align: center;
   }
 
-  a.login-btn {
-    display: none;
+  .active{
+    display: block;
   }
 }
 
