@@ -48,6 +48,13 @@ a {
   background-color: #000;
   border-radius: 0px 0px 30px 30px;
 }*/
+
+.menu {
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+}
+
 .menu ul{
   display: -webkit-flex;
   display: -moz-flex;
@@ -59,13 +66,10 @@ a {
   justify-content: space-between;
   background-color: #000;
   color: #fff;
+  border-radius: 0px 0px 30px 30px;
   font-family: "Steradian-bold";
-}
-
-.menu ul{
-  /* padding-top: 0.2rem;
-  padding-bottom: 0.2rem; */
   height: 100px;
+  user-select: none;
 }
 
 .logo {
@@ -74,6 +78,7 @@ a {
   margin-left: 50px;
   user-select: none;
 }
+
 .navbarLine{
   display: none;
 }
@@ -109,16 +114,9 @@ a.login-btn {
   border-radius: 30px;
   margin-right: 59px;
 }
+
 .navbar-toggle {
   display: none;
-}
-.navbarText:hover{
-  background-color: #72FDC1;
-  color: #000;
-}
-.login-btn:hover a{
-  background-color: #72FDC1;
-  color: #000;
 }
 
 
@@ -169,6 +167,7 @@ a.login-btn {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
   nav ul li a{
     text-align: center;
   }
@@ -440,7 +439,6 @@ ul.about-content {
 
 .about-left {
   flex-basis: 40%;
-  background-image: url(assets/1.png);
 }
 
 .about-right {

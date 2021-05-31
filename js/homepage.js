@@ -1,11 +1,25 @@
 const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
 const navbarText = document.getElementsByClassName('navbarText');
 const navbarLine = document.getElementsByClassName('navbarLine')[0];
+const menu = document.querySelector(".listSection");
+
 toggleButton.addEventListener('click', function() {
   navbarLine.classList.toggle('active');
   for(var i=0; i<navbarText.length; i++)
   navbarText[i].classList.toggle('active');
 });
+
+function toggleMenu() {
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+    toggleButton.innerHTML = "<i class='fas fa-bars'></i>";
+  } else {
+    menu.classList.add("active");
+    toggleButton.innerHTML = "<i class='fas fa-times'></i>";
+  }
+}
+
+toggleButton.addEventListener("click", toggleMenu, false);
 
 
 
