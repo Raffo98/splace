@@ -30,7 +30,7 @@ a {
   color: inherit;
 }
 
-header {
+/*header {
   position: absolute;
   top: 0;
   left: 0;
@@ -47,16 +47,28 @@ header {
   color: #fff;
   background-color: #000;
   border-radius: 0px 0px 30px 30px;
+}*/
+.menu ul{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.menu li{
+  padding: 1rem;
 }
 
 .logo {
   cursor: pointer;
-  width: 120px;
-  height: 33.17px;
+  width: 15%;
   margin-left: 59px;
+  flex: 1;
+  user-select: none;
 }
 
-header nav {
+/*header nav {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -64,10 +76,10 @@ header nav {
   display: flex;
   position: absolute;
   padding-left: 273px;
-}
+}*/
 
 header nav li {
-  margin: 0 50px;
+  margin: 10px;
   font-family: "Steradian-bold";
 }
 
@@ -85,7 +97,7 @@ a.login-btn {
   padding: 15px 35px;
   background: #fff;
   border-radius: 30px;
-  margin-right: 59px;
+  /*margin-right: 59px;*/
 }
 .navbar-toggle {
   display: none;
@@ -132,11 +144,7 @@ header nav li:hover a{
 }
 /* MOBILE MENU */
 @media (max-width: 600px) {
-
-  header nav{
-    flex-wrap: wrap;
-  }
-  .navbarText{
+  .menu ul{
     flex-wrap: wrap;
   }
 
@@ -147,7 +155,7 @@ header nav li:hover a{
 
   .navbarText{
     display: none;
-    width: 100;
+    width: 100%;
     text-align: center;
   }
 

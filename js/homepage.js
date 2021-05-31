@@ -1,7 +1,7 @@
-const toogleButton = document.getElementsByClassName('navbar-toggle')[0];
+const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
 const navbarText = document.getElementsByClassName('navbarText');
 toggleButton.addEventListener('click', function() {
-  for(var i=0; i<navbarText.lenght; i++)
+  for(var i=0; i<navbarText.length; i++)
   navbarText[i].classList.toggle('active');
 });
 
