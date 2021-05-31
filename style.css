@@ -133,9 +133,10 @@ header nav li:hover a{
 /* MOBILE MENU */
 @media (max-width: 600px) {
 
-  header nav{
+  /* header nav{
     flex-wrap: wrap;
-  }
+  } */
+
   .navbarText{
     flex-wrap: wrap;
   }
