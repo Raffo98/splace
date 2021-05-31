@@ -53,14 +53,13 @@ a {
   background-color: #000;
   border-radius: 0px 0px 30px 30px;
 }*/
-
 .menu {
   position: fixed;
   z-index: 999;
   width: 100vw;
 }
 
-.menu ul{
+.menu ul {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -79,12 +78,17 @@ a {
 
 .logo {
   cursor: pointer;
-  width: 120px;
+  width: 161px;
   margin-left: 50px;
   user-select: none;
 }
 
-.navbarLine{
+.menu ul li:nth-child(3),
+.menu ul li:nth-child(4) {
+  padding-left: 50px;
+}
+
+.navbarLine {
   display: none;
 }
 
@@ -97,7 +101,6 @@ a {
   position: absolute;
   padding-left: 273px;
 }*/
-
 /* header nav li {
   margin: 10px;
   font-family: "Steradian-bold";
@@ -111,6 +114,11 @@ header nav li:last-child {
   margin-right: 0px;
 } */
 
+.login {
+ flex: 1;
+ text-align: right;
+}
+
 a.login-btn {
   font-family: "Steradian-regular";
   color: #000;
@@ -123,7 +131,6 @@ a.login-btn {
 .navbar-toggle {
   display: none;
 }
-
 
 @media (max-width:1000px) {
   header nav li {
@@ -149,13 +156,15 @@ a.login-btn {
 } */
 /* MOBILE MENU */
 @media (max-width: 768px) {
-  .menu ul{
+  .menu ul {
     flex-wrap: wrap;
     height: auto;
   }
-  .logo{
+
+  .logo {
     order: 0;
   }
+
   .navbar-toggle {
     display: block;
     padding: 30px;
@@ -164,7 +173,7 @@ a.login-btn {
     font-size: 25px;
   }
 
-  .navbarText{
+  .navbarText {
     display: none;
     width: 100%;
     text-align: center;
@@ -173,36 +182,38 @@ a.login-btn {
     padding-bottom: 1rem;
   }
 
-  nav ul li a{
+  nav ul li a {
     text-align: center;
   }
 
-  .active{
+  .active {
     display: block;
   }
+
   .menu ul li:nth-child(3),
-  .menu ul li:nth-child(4){
+  .menu ul li:nth-child(4) {
     order: 4;
   }
-  .login-btn{
+
+  .login-btn {
     order: 3;
   }
-  a.login-btn{
+
+  a.login-btn {
     margin: 0;
     padding: 0;
     background: none;
     color: #fff;
-
   }
-  .navbarLine{
+
+  .navbarLine {
     border-bottom: 1px solid white;
     width: 100%;
     order: 3;
     padding: 0;
     margin: 0 59px;
+  }
 }
-}
-
 
 /*banner area*/
 section {
@@ -266,12 +277,28 @@ section p {
 } */
 .banner-area h1 {
   display: inline;
-  margin-bottom: 15px;
   font-size: 84px;
   line-height: 1em;
   font-family: "Steradian-bold";
   /* background-image: linear-gradient(360deg, rgba(114,253,193,1) 30%, rgba(114,253,193,0) 30%); */
-  background-image: linear-gradient(#fff 60%, #72FDC1 30%);
+  /* background-image: linear-gradient(#fff 60%, #72FDC1 30%); */
+}
+
+.payoff {
+
+  /* background-color: #72FDC1; */
+  margin-bottom: 15px;
+}
+
+span {
+  background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
+  background-size: 100% 70%;
+  background-position: 0 6%;
+  background-repeat: no-repeat;
+}
+
+.payoff br {
+  display: none;
 }
 
 .banner-area h3 {
@@ -311,6 +338,13 @@ section p {
     font-size: 65px;
   }
 
+  span {
+    background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
+    background-size: 100% 70%;
+    background-position: 0 6%;
+    background-repeat: no-repeat;
+  }
+
   .banner-area h3 {
     font-size: 27px;
   }
@@ -323,8 +357,13 @@ section p {
 
   .banner-area h1 {
     font-size: 48px;
-    padding-top: 65px;
-    background-image: linear-gradient(#fff 76%, #72FDC1 30%);
+  }
+
+  span {
+    background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
+    background-size: 100% 70%;
+    background-position: 0 6%;
+    background-repeat: no-repeat;
   }
 
   .banner-area h3 {
@@ -340,10 +379,18 @@ section p {
 @media (max-width: 800px) {
   .banner-area {
     min-height: 550px;
+    padding-top: 150px;
   }
 
   .banner-area h1 {
     font-size: 40px;
+  }
+
+  span {
+    background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
+    background-size: 100% 70%;
+    background-position: 0 6%;
+    background-repeat: no-repeat;
   }
 
   .banner-area h3 {
@@ -361,12 +408,29 @@ section p {
 }
 
 @media (max-width: 530px) {
-  .banner-area {
-    min-height: 400px;
+
+  .logo {
+    width: 128px;
   }
 
   .banner-area h1 {
-    font-size: 35px;
+    font-size: 40px;
+  }
+
+  .payoff br {
+    display: block;
+  }
+
+  span {
+    /* background: linear-gradient(#72FDC1, #72FDC1) 0 var(--y-pos, 40%) / 100% var(--size, 20px) no-repeat; */
+    background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
+    background-size: 100% 70%;
+    background-position: 0 6%;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(to top, var(--bot transparent) 50%, var(--top #72FDC1) 50%); */
+    display: inline;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
   }
 
   .banner-area h3 {
@@ -376,7 +440,6 @@ section p {
   .banner-area h3 br {
     display: none;
   }
-
 
   .banner-area a.banner-btn {
     padding: 15px 40px;
@@ -619,7 +682,6 @@ ul.footer-content {
   display: flex;
   flex-wrap: wrap;
 } */
-
 .footer-btn {
   padding-top: 70px;
   font-family: "Steradian-bold";
