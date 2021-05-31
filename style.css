@@ -283,6 +283,11 @@ section p {
 }
 
 .banner-area .btn-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
   padding-top: 70px;
   width: 100%;
 }
@@ -352,6 +357,35 @@ section p {
 
   .banner-area .btn-container {
     padding-top: 48px;
+  }
+}
+
+@media (max-width: 530px) {
+  .banner-area {
+    min-height: 400px;
+  }
+
+  .banner-area h1 {
+    font-size: 35px;
+  }
+
+  .banner-area h3 {
+    font-size: 16px;
+  }
+
+  .banner-area h3 br {
+    display: none;
+  }
+
+
+  .banner-area a.banner-btn {
+    padding: 15px 40px;
+    margin-bottom: 15px;
+  }
+
+  .banner-area .btn-container {
+    padding-top: 48px;
+    flex-wrap: wrap;
   }
 }
 
