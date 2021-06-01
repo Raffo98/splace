@@ -326,7 +326,7 @@ span {
 }
 
 
-.banner-area a.banner-btn {
+a.banner-btn {
   padding-top: 70px;
   font-family: "Steradian-bold";
   color: #fff;
@@ -549,6 +549,31 @@ ul.services-content {
   .services-content li p {
     padding: 0;
   }
+}
+
+/*split area*/
+ul.split-content {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.split-content li h4 {
+  font-family: "Steradian-bold";
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.split-content li p {
+  font-family: "Steradian-regular";
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 0;
 }
 
 /*about area*/
