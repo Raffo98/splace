@@ -242,7 +242,7 @@ section {
 
 @media (max-width: 600px) {
   section {
-    padding: 125px 30px;
+    padding: 125px 15px;
   }
 }
 
@@ -250,7 +250,6 @@ section p {
   max-width: 800px;
   margin-bottom: 35px;
   padding: 0;
-  line-height: 2;
 }
 
 .banner-area {
@@ -506,7 +505,7 @@ ul.services-content {
 
 .services-content li p {
   font-family: "Steradian-regular";
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.5em;
   margin: 0;
 }
@@ -516,8 +515,29 @@ ul.services-content {
   margin-top: 100px;
 }
 
-@media (max-width:1000px) {
+@media (max-width:1550px) {
+
   .services-content li {
+    flex-basis: 40%;
+    margin-bottom: 65px;
+  }
+
+  .services-content li:nth-child(2),
+  .services-content li:nth-child(4) {
+    margin-top: 0;
+  }
+
+  .service-area img {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width:1000px) {
+
+  .services-content li {
+    padding: 0;
     flex-basis: 100%;
     margin-bottom: 65px;
   }
@@ -665,14 +685,10 @@ ul.contact-content {
   cursor: pointer;
 }
 
-.l-footer {
-  margin-right: 1.25em;
-  margin-bottom: 2em;
-}
-
 h2 {
-  font-weight: 900;
+  font-family: "Steradian-bold";
   font-size: 16px;
+  padding-top: 30px;
 }
 
 .footer ul {
@@ -703,6 +719,7 @@ h2 {
 }
 
 .box a {
+  font-family: "Steradian-regular";
   text-decoration: none;
   color: #999;
 }
@@ -730,26 +747,34 @@ h2 {
   padding: 5px 25px;
   background: #fff;
   border-radius: 30px;
-  margin-right: 15px;
   display: inline-block;
   white-space: nowrap;
 }
 
-@media screen and (min-width: 600px) {
+#ios-btn {
+  margin-top: 30px;
+}
+
+#android-btn {
+    margin-top: 30px;
+}
+
+.b-footer {
+  font-family: "Steradian-regular";
+  text-align: left;
+}
+
+@media screen and (min-width: 735px) {
   .r-footer > *{
     flex: 1;
   }
 
-  h2 {
-    font-family: "Steradian-bold";
-  }
-
-  .box {
-    font-family: "Steradian-regular";
-  }
-
   .l-footer {
     flex: 0.5 0px;
+  }
+
+  h2 {
+    padding-top: 0;
   }
 
   .r-footer {
@@ -763,11 +788,13 @@ h2 {
     padding: 5px 25px;
     background: #fff;
     border-radius: 30px;
-    margin-bottom: 15px;
     display: inline-block;
     white-space: nowrap;
   }
 
+  #ios-btn {
+    margin-top: 0;
+  }
 
 }
 /* footer {
