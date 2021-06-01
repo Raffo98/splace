@@ -195,8 +195,14 @@ a.login-btn {
     order: 4;
   }
 
+  .login {
+   order: 2;
+   text-align: center;
+   /* text-align: right; */
+  }
+
   .login-btn {
-    order: 3;
+    /* order: 3; */
   }
 
   a.login-btn {
