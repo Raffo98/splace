@@ -115,7 +115,7 @@ header nav li:last-child {
 } */
 
 .login {
- flex: 1;
+  flex: 1;
  text-align: right;
 }
 
@@ -137,6 +137,7 @@ a.login-btn {
     margin: 0 30px;
   }
 }
+
 
 @media (max-width:900px) {
   header nav {
@@ -193,16 +194,15 @@ a.login-btn {
   .menu ul li:nth-child(3),
   .menu ul li:nth-child(4) {
     order: 4;
+    padding: 16px 0;
   }
 
   .login {
-   order: 2;
-   text-align: center;
-   /* text-align: right; */
+   flex: none;
   }
 
   .login-btn {
-    /* order: 3; */
+    order: 3;
   }
 
   a.login-btn {
@@ -238,6 +238,7 @@ section {
     padding: 100px 50px;
   }
 }
+
 
 @media (max-width: 600px) {
   section {
@@ -325,6 +326,7 @@ span {
   width: 100%;
 }
 
+
 .banner-area a.banner-btn {
   padding-top: 70px;
   font-family: "Steradian-bold";
@@ -335,6 +337,11 @@ span {
   margin-right: 15px;
 }
 
+@media screen and (max-height: 900px) {
+  .banner-area h1 {
+    font-size: 80px;
+  }
+}
 @media (max-width: 1366px) {
   .banner-area {
     min-height: 800px;
@@ -652,7 +659,6 @@ footer {
 .logo-footer {
   cursor: pointer;
   width: 225px;
-  height: 62.19px;
   margin-left: 59px;
 }
 
@@ -688,6 +694,16 @@ ul.footer-content {
   display: flex;
   flex-wrap: wrap;
 } */
+
+.footer-btn-container{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
 .footer-btn {
   padding-top: 70px;
   font-family: "Steradian-bold";
@@ -696,11 +712,16 @@ ul.footer-content {
   background: #fff;
   border-radius: 30px;
   margin-right: 15px;
+
 }
 
 #ios-btn {
-  display: inline-block;
+  /* display: inline-block; */
   margin-bottom: 20px;
+}
+
+#android-btn{
+
 }
 
 #copyright {
@@ -708,4 +729,19 @@ ul.footer-content {
   margin-left: 59px;
   font-family: "Steradian-regular";
   font-size: 16px;
+}
+
+@media (max-width: 1400px) {
+  .footer-btn-container{
+    flex-wrap: wrap;
+  }
+  .footer-content li{
+    padding-right: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  ul .footer-content{
+    flex-wrap: wrap;
+  }
 }
