@@ -496,6 +496,14 @@ ul.split-content {
   justify-content: center;
 }
 
+.split-content li {
+  flex-basis: 50%;
+  /* text-align: center; */
+}
+.split-content img {
+  align-items: center;
+}
+
 .split-content li h4 {
   font-family: "Steradian-bold";
   font-size: 28px;
@@ -506,7 +514,15 @@ ul.split-content {
   font-family: "Steradian-regular";
   font-size: 18px;
   line-height: 1.5em;
-  margin: 0;
+  margin-bottom: 60px;
+  /* margin: 0; */
+}
+
+@media (max-width:1000px) {
+  .split-content li {
+    padding: 0;
+    flex-basis: 100%;
+  }
 }
 
 /*about area*/
