@@ -564,6 +564,20 @@ ul.split-content {
   }
 }
 
+/*map area*/
+
+
+.map-container {
+    width:400px;
+    height:400px;
+    overflow:hidden;
+    border:1px solid black;
+}
+.map-content h1{
+  font-size: 60px;
+  font-family: "Steradian-bold";
+}
+
 /*about area*/
 ul.about-content {
   width: 100%;
