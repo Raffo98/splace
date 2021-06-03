@@ -566,13 +566,33 @@ ul.split-content {
 
 /*map area*/
 
-
-.map-container {
+#range {
     width:400px;
     height:400px;
     overflow:hidden;
     border:1px solid black;
+    position:relative;
 }
+#map-container {
+    position:absolute;
+    top:-800px;
+    left:-1520px;
+    width: 3440px;
+    height: 2000px;
+}
+#map {
+    width: 1920px;
+    height: 1200px;
+    top:800px;
+    left:1520px;
+}
+
+/* #map-container {
+   width: 900px;
+   height: 400px;
+   overflow:hidden;
+} */
+
 .map-content h1{
   font-size: 60px;
   font-family: "Steradian-bold";

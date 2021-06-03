@@ -2,8 +2,6 @@ const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
 const navbarText = document.getElementsByClassName('navbarText');
 const navbarLine = document.getElementsByClassName('navbarLine')[0];
 const menu = document.querySelector(".listSection");
-const parent = document.querySelector(".parent");
-
 
 toggleButton.addEventListener('click', function() {
   navbarLine.classList.toggle('active');
@@ -25,9 +23,14 @@ function toggleMenu() {
 
 toggleButton.addEventListener("click", toggleMenu, false);
 
-jQuery(document).ready(function() {
-    jQuery("#map").draggable();
-    // containment: parent
+// $( function() {
+//   $("#map").draggable({
+//     containment: "parent"
+//   });
+// } );
+
+jQuery("#map").draggable({
+    containment: $('#map-container')
 });
 
 
