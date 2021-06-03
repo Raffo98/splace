@@ -33,6 +33,41 @@ jQuery("#map").draggable({
     containment: $('#map-container')
 });
 
+/*counter*/
+
+// var $win = $(window);
+// var $stat = $('.worker-count'); // Change this to affect your desired element.
+//
+// $win.on('scroll', function () {
+//     var scrollTop = $win.scrollTop();
+//
+//     $stat.each(function () {
+//         var $self = $(this);
+//         var prev=$self.offset();
+//       	console.log(scrollTop);
+//         console.log(prev.top);
+//         if ( (scrollTop - prev.top) > -300) {
+//           $self.css('opacity', '1').addClass('animated fadeInLeft ');
+//         } else {
+//           console.log('n');
+//         }
+//
+//     });
+//
+// }).scroll();
+
+$('.worker-count').each(function () {
+    $(this).prop('Counter',100000).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now).toLocaleString('it-IT'));
+        }
+    });
+});
+
 
 
 /*const logo = document.getElementsByClassName("logo")[0];
