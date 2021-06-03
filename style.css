@@ -615,8 +615,18 @@ justify-content: flex-start;
 } */
 
 
-/*about area*/
-ul.about-content {
+/*mockup area*/
+#mockup-1 {
+  max-height: 80vh;
+}
+#mockup-2 {
+  max-height: 80vh;
+}
+#mockup-3 {
+  max-height: 80vh;
+}
+
+ul.mockup-content {
   width: 100%;
   display: -webkit-flex;
   display: -moz-flex;
@@ -624,32 +634,28 @@ ul.about-content {
   display: -o-flex;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.about-content li {
-  padding: 20px;
-  height: 290px;
-  background-clip: content-box;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
-
-.about-left {
-  flex-basis: 40%;
-}
-
-.about-right {
+.mockup-1-left {
+  width: 40%;
   flex-basis: 60%;
 }
 
-.about-area p {
+.mockup-1-right {
+  font-family: 'Steradian-regular';
+  flex-basis: 40%;
+  flex: 0.7;
+}
+
+.mockup-area-1 p {
   max-width: 800px;
   margin-bottom: 35px;
   line-height: 1.5;
   text-align: left;
   padding-left: 0;
+  font-size: 18px;
 }
 
 .section-title {
@@ -657,28 +663,100 @@ ul.about-content {
   margin-bottom: 5%;
 }
 
-.about-right h2 {
+.mockup-1-right h2 {
   margin-bottom: 3%;
-}
-
-.about-btn {
-  padding: 15px 35px;
-  background: crimson;
-  border-radius: 30px;
-  color: #fff;
+  font-size: 28px;
 }
 
 @media (max-width: 1000px) {
 
-  .about-left,
-  .about-right {
+  .mockup-1-left,
+  .mockup-1-right {
     flex-basis: 100%;
   }
 
-  .about-content li {
-    padding: 8px;
-  }
 }
+
+/*mockup area 2*/
+
+.mockup-2-right {
+  width: 40%;
+  flex-basis: 60%;
+}
+
+.mockup-2-left {
+  font-family: 'Steradian-regular';
+  flex-basis: 40%;
+}
+
+.mockup-area-2 p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  line-height: 1.5;
+  text-align: left;
+  padding-left: 0;
+  font-size: 18px;
+}
+
+.mockup-2-left h2 {
+  margin-bottom: 3%;
+  font-size: 28px;
+}
+
+@media (max-width: 1000px) {
+
+
+  .mockup-2-left {
+    order: 2;
+  }
+
+  .mockup-2-right {
+    order: 1;
+  }
+
+  .mockup-2-left,
+  .mockup-2-right {
+    flex-basis: 100%;
+  }
+
+}
+
+/*mockup area 3*/
+
+.mockup-3-left {
+  width: 40%;
+  flex-basis: 60%;
+}
+
+.mockup-3-right {
+  position: relative;
+  font-family: 'Steradian-regular';
+  flex-basis: 40%;
+}
+
+.mockup-area-3 p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  line-height: 1.5;
+  text-align: left;
+  padding-left: 0;
+  font-size: 18px;
+}
+
+.mockup-3-right h2 {
+  margin-bottom: 3%;
+  font-size: 28px;
+}
+
+@media (max-width: 1000px) {
+
+  .mockup-3-left,
+  .mockup-3-right {
+    flex-basis: 100%;
+  }
+
+}
+
 
 /*contact area*/
 #contact {
