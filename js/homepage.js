@@ -61,7 +61,7 @@ $('.worker-count').each(function () {
         Counter: $(this).text()
     }, {
         duration: 4000,
-        easing: 'swing',
+        easing: 'easeOutExpo',
         step: function (now) {
             $(this).text(Math.ceil(now).toLocaleString('it-IT'));
         }
