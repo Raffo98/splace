@@ -633,12 +633,15 @@ justify-content: flex-start;
 /*mockup area*/
 #mockup-1 {
   padding-top: 0;
+  padding-bottom: 0;
 }
 #mockup-2 {
     padding-top: 0;
+    padding-bottom: 0;
 }
 #mockup-3 {
     padding-top: 0;
+    padding-bottom: 0;
 }
 
 ul.mockup-content {
@@ -691,7 +694,7 @@ ul.mockup-content {
 /*mockup area 2*/
 
 .mockup-2-right {
-  width: 30%;
+  max-width: 60%;
   flex-basis: 60%;
 }
 
@@ -699,6 +702,7 @@ ul.mockup-content {
   position: relative;
   font-family: 'Steradian-regular';
   flex-basis: 40%;
+  padding-left: 200px;
 }
 
 .mockup-area-2 p {
@@ -720,6 +724,7 @@ ul.mockup-content {
 
   .mockup-2-left {
     order: 2;
+    padding-left: 0;
   }
 
   .mockup-2-right {
@@ -736,14 +741,14 @@ ul.mockup-content {
 /*mockup area 3*/
 
 .mockup-3-left {
-  width: 30%;
-  flex-basis: 60%;
+  max-width: 60%;
+  flex-basis: 70%;
 }
 
 .mockup-3-right {
   position: relative;
   font-family: 'Steradian-regular';
-  flex-basis: 40%;
+  flex-basis: 30%;
 }
 
 .mockup-area-3 p {
