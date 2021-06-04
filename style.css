@@ -114,10 +114,19 @@ a.login-btn {
   .menu ul {
     flex-wrap: wrap;
     height: auto;
+    align-content: space-between;
   }
 
   .logo {
     order: 0;
+  }
+  .vale{
+    align-self: flex-start;
+    margin-top: 25px
+  }
+  .vale2{
+    align-self: flex-start;
+    padding-top: 0;
   }
 
   .navbar-toggle {
@@ -143,6 +152,9 @@ a.login-btn {
 
   .active {
     display: block;
+  }
+  .listSection.active{
+    height: 100vh;
   }
 
   .menu ul li:nth-child(3),
@@ -602,8 +614,8 @@ justify-content: flex-start;
     height: 2000px;
 }
 #map {
-    width: 1920px;
-    height: 1200px;
+    width: 2560px;
+    height: 2048px;
     top:800px;
     left:1520px;
 }

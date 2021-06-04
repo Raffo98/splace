@@ -12,11 +12,11 @@ toggleButton.addEventListener('click', function() {
 function toggleMenu() {
   if (menu.classList.contains("active")) {
     menu.classList.remove("active");
-    menu.style.height = "auto";
+    // menu.style.height = "auto";
     toggleButton.innerHTML = "<i class='fas fa-bars'></i>";
   } else {
     menu.classList.add("active");
-    menu.style.height = "100vh";
+    // menu.style.height = "100vh";
     toggleButton.innerHTML = "<i class='fas fa-times'></i>";
   }
 }
@@ -25,7 +25,7 @@ toggleButton.addEventListener("click", toggleMenu, false);
 
 
 jQuery("#map").draggable({
-    containment: $('#map-container')
+    containment: $('#map-container'), scroll: false
 });
 
 /*counter*/
