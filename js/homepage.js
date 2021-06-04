@@ -1,3 +1,9 @@
+mapboxgl.accessToken = 'pk.eyJ1IjoicmFmZmFlbGVyaWNjYXJkZWxsaSIsImEiOiJjazNpcmZoMzIwYWVzM2NwNm92eWpxbTdiIn0.15M15i30LdC8jUWkVsMSfg';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/raffaelericcardelli/ckpi7qoex04lt17t72gud5nuv'
+});
+
 const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
 const navbarText = document.getElementsByClassName('navbarText');
 const navbarLine = document.getElementsByClassName('navbarLine')[0];
