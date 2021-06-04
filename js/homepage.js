@@ -24,9 +24,9 @@ function toggleMenu() {
 toggleButton.addEventListener("click", toggleMenu, false);
 
 
-jQuery("#map").draggable({
-    containment: $('#map-container'), scroll: false
-});
+// jQuery("#map").draggable({
+//     containment: $('#map-container'), scroll: false
+// });
 
 /*counter*/
 
