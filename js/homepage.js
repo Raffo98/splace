@@ -61,7 +61,7 @@ jQuery("#map").draggable({
 //
 // }).scroll();
 
-$('.worker-count').each(function () {
+$('.worker-count').focus(function () {
     $(this).prop('Counter',100000).animate({
         Counter: $(this).text()
     }, {

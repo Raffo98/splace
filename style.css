@@ -618,6 +618,9 @@ justify-content: flex-start;
     height: 2048px;
     top:800px;
     left:1520px;
+    /* margin: -1648px -50px; */
+    margin-top: -824px;
+    margin-bottom: -824px;
 }
 
 /* #map-container {
