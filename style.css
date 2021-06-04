@@ -687,7 +687,7 @@ justify-content: flex-start;
 }
 #mockup-3 {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 100px;
 }
 
 ul.mockup-content {
