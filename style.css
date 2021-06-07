@@ -820,6 +820,32 @@ ul.mockup-content {
 
 }
 
+/*cta area*/
+
+.cta {
+    padding: 0;
+    height: 100vh;
+}
+
+.cta-content {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.cta-content img {
+  width: 60%;
+  margin: 0;
+}
+
 
 /*contact area*/
 #contact {
