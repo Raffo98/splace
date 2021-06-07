@@ -8,6 +8,7 @@ const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
 const navbarText = document.getElementsByClassName('navbarText');
 const navbarLine = document.getElementsByClassName('navbarLine')[0];
 const menu = document.querySelector(".listSection");
+var counter_animation = 0;
 
 toggleButton.addEventListener('click', function() {
   navbarLine.classList.toggle('active');
@@ -67,14 +68,40 @@ toggleButton.addEventListener("click", toggleMenu, false);
 //
 // }).scroll();
 
-$('.worker-count').focus(function () {
-    $(this).prop('Counter',100000).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 3000,
-        easing: 'easeOutExpo',
-        step: function (now) {
-            $(this).text(Math.ceil(now).toLocaleString('it-IT'));
-        }
-    });
+const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      if (counter_animation == 0){
+        $('.worker-count').each(function () {
+            $(this).prop('Counter',100000).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 3000,
+                easing: 'easeOutExpo',
+                step: function (now) {
+                    $(this).text(Math.ceil(now).toLocaleString('it-IT'));
+                }
+            });
+        });
+        counter_animation = 1;
+      }
+    }
+  });
 });
+
+observer.observe(document.querySelector('.worker-count'));
+
+// $('.worker-count').each(function () {
+//     $(this).prop('Counter',100000).animate({
+//         Counter: $(this).text()
+//     }, {
+//         duration: 3000,
+//         easing: 'easeOutExpo',
+//         step: function (now) {
+//             $(this).text(Math.ceil(now).toLocaleString('it-IT'));
+//         }
+//     });
+// });
