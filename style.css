@@ -706,6 +706,9 @@ ul.split-content {
   .map-content h1 {
     font-size: 60px;
   }
+  /* .map-area {
+    min-height: 100px;
+  } */
 }
 
 @media (max-width: 1100px) {
@@ -853,7 +856,7 @@ ul.mockup-content {
   position: relative;
   font-family: 'Steradian-regular';
   flex-basis: 40%;
-  padding-left: 200px;
+  padding-left: 100px;
 }
 
 .mockup-area-2 p {
@@ -1000,8 +1003,10 @@ ul.mockup-content {
   #cta-btn {
     text-align: center;
     margin-top: 10px;
+    margin-right: 0;
   }
 }
+
 
 @media (max-width: 958px) {
   .cta {
