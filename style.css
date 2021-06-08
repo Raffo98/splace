@@ -706,9 +706,9 @@ ul.split-content {
   .map-content h1 {
     font-size: 60px;
   }
-  /* .map-area {
-    min-height: 100px;
-  } */
+  .map-area {
+    max-height: 100px;
+  }
 }
 
 @media (max-width: 1100px) {
