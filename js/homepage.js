@@ -62,6 +62,17 @@ const observer = new IntersectionObserver(entries => {
                 }
             });
         });
+        $('.places-count').each(function () {
+            $(this).prop('Counter',1000).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 3000,
+                easing: 'easeOutExpo',
+                step: function (now) {
+                    $(this).text(Math.ceil(now).toLocaleString('it-IT'));
+                }
+            });
+        });
         counter_animation = 1;
       }
     }
@@ -69,3 +80,18 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(document.querySelector('.worker-count'));
+
+function resize() {
+  if(window.innerWidth <= 768) {
+    document.getElementById("worker").innerHTML = "lavoratori da conoscere";
+  }
+
+  else {
+    document.getElementById("worker").innerHTML = "lavoratori da conoscere,";
+  }
+}
+
+$(document).ready(function(){
+    resize();
+    $(window).resize(resize);
+});
