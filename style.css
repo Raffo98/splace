@@ -222,9 +222,14 @@ section p {
 
 .banner-area {
   position: relative;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 100vh;
   color: #000;
+  padding-bottom: 0;
+}
+
+.banner-content {
+  margin-top: 9.3vw;
 }
 
 .banner-area .banner-img {
@@ -240,7 +245,7 @@ section p {
 }
 
 .banner-area h1 {
-  display: inline;
+  /* display: inline; */
   font-size: 84px;
   line-height: 1em;
   font-family: "Steradian-bold";
@@ -287,6 +292,21 @@ a.banner-btn {
   background: #000;
   border-radius: 30px;
   margin-right: 15px;
+}
+
+.next-section {
+  font-family: "Steradian-regular";
+  font-size: 16px;
+  text-align: center;
+  align-self: center;
+}
+
+.next-section p {
+  margin: 0;
+}
+
+.next-section i {
+  font-size: 48px;
 }
 
 @media screen and (max-height: 900px) {
@@ -423,6 +443,7 @@ a.banner-btn {
   display: -o-flex;
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
   background: #000;
 }

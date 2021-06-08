@@ -30,43 +30,19 @@ function toggleMenu() {
 
 toggleButton.addEventListener("click", toggleMenu, false);
 
+//loop through each button
+$('.next-section').each(function() {
+    $(this).on('click', function () {
+        //find the button's parent, in this case it is the section wrapper #about
+        var nextSection = $(this).parent().next();
+        //animate to the next section, edit the offset and time
+        // note: having an offset can be handy, especially if you have fixed elements that depend on these scroll bahaviours. I'll leave it up to you to decide if you need an offset or not. Feel free to delete the 1 pixel altogether, you are the captain your own ship!
+        $('html, body').animate({
+            scrollTop: nextSection.offset().top + 1
+        }, 200 );
+    });
+});
 
-// jQuery("#map").draggable({
-//     containment: $('#map-container'), scroll: false
-// });
-
-/*counter*/
-
-// var $win = $(window);
-// var $stat = $('.map-area'); // Change this to affect your desired element.
-//
-// $win.on('scroll', function () {
-//     var scrollTop = $win.scrollTop();
-//
-//     $stat.each(function () {
-//         var $self = $(this);
-//         var prev=$self.offset();
-//       	console.log(scrollTop);
-//         console.log(prev.top);
-//         if ( (scrollTop - prev.top) > -300) {
-//           $('.worker-count').each(function () {
-//               $(this).prop('Counter',100000).animate({
-//                   Counter: $(this).text()
-//               }, {
-//                   duration: 3000,
-//                   easing: 'easeOutExpo',
-//                   step: function (now) {
-//                       $(this).text(Math.ceil(now).toLocaleString('it-IT'));
-//                   }
-//               });
-//           });
-//         } else {
-//           console.log('n');
-//         }
-//
-//     });
-//
-// }).scroll();
 
 const observer = new IntersectionObserver(entries => {
   // Loop over the entries
@@ -93,15 +69,3 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(document.querySelector('.worker-count'));
-
-// $('.worker-count').each(function () {
-//     $(this).prop('Counter',100000).animate({
-//         Counter: $(this).text()
-//     }, {
-//         duration: 3000,
-//         easing: 'easeOutExpo',
-//         step: function (now) {
-//             $(this).text(Math.ceil(now).toLocaleString('it-IT'));
-//         }
-//     });
-// });
