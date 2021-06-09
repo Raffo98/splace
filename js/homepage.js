@@ -1,9 +1,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoicmFmZmFlbGVyaWNjYXJkZWxsaSIsImEiOiJjazNpcmZoMzIwYWVzM2NwNm92eWpxbTdiIn0.15M15i30LdC8jUWkVsMSfg';
 var map = new mapboxgl.Map({
 container: 'map',
-style: 'mapbox://styles/raffaelericcardelli/ckpi7qoex04lt17t72gud5nuv',
-center: [9.189, 45.469],
-zoom: 11.67
+style: 'mapbox://styles/raffaelericcardelli/ckpi7qoex04lt17t72gud5nuv'
 });
 
 const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
