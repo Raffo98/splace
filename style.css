@@ -59,6 +59,7 @@ a {
 }
 
 .logo {
+  margin-top: 2.5px;
   cursor: pointer;
   width: 161px;
   margin-left: 50px;
@@ -417,8 +418,18 @@ a.banner-btn {
 }
 
 @media (max-width: 530px) {
+
+  .vale {
+    margin-top: 28.85px;
+  }
+
   .logo {
     width: 128px;
+    margin-left: 30px;
+  }
+
+  .navbar-toggle {
+    margin-right: 0;
   }
 
   .banner-area h1 {
@@ -665,7 +676,7 @@ ul.split-content {
   }
 
   .split-area a.banner-btn {
-    width: 100%;
+    width: 100vw;
     text-align: center;
   }
 }
