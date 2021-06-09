@@ -8,6 +8,8 @@ const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
 const navbarText = document.getElementsByClassName('navbarText');
 const navbarLine = document.getElementsByClassName('navbarLine')[0];
 const menu = document.querySelector(".listSection");
+const logo = document.querySelector(".vale");
+
 var counter_animation = 0;
 
 toggleButton.addEventListener('click', function() {
@@ -21,10 +23,17 @@ function toggleMenu() {
     menu.classList.remove("active");
     // menu.style.height = "auto";
     toggleButton.innerHTML = "<i class='fas fa-bars'></i>";
+    logo.style.position = "relative";
+    toggleButton.style.position = "relative";
+
   } else {
     menu.classList.add("active");
     // menu.style.height = "100vh";
     toggleButton.innerHTML = "<i class='fas fa-times'></i>";
+    logo.style.position = "absolute";
+    toggleButton.style.position = "absolute";
+    toggleButton.style.right = "0px";
+
   }
 }
 

@@ -114,7 +114,7 @@ a.login-btn {
   .menu ul {
     flex-wrap: wrap;
     height: auto;
-    align-content: space-between;
+    align-content: center;
   }
 
   .logo {
@@ -123,7 +123,7 @@ a.login-btn {
 
   .vale {
     align-self: flex-start;
-    margin-top: 25px
+    margin-top: 25px;
   }
 
   .vale2 {
@@ -144,6 +144,7 @@ a.login-btn {
     width: 100%;
     text-align: center;
     font-family: "Steradian-regular";
+    font-size: 4.7vh;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
@@ -181,13 +182,13 @@ a.login-btn {
     color: #fff;
   }
 
-  .navbarLine {
+  /* .navbarLine {
     border-bottom: 1px solid white;
     width: 100%;
     order: 3;
     padding: 0;
     margin: 0 59px;
-  }
+  } */
 }
 
 /*banner area*/
@@ -435,6 +436,21 @@ a.banner-btn {
   }
 }
 
+@media (max-width: 425px) {
+  .banner-area {
+    height: 100vh;
+    padding-top: 120px;
+  }
+  .banner-area .btn-container {
+    padding-top: 0;
+  }
+
+  .banner-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /*service area*/
 #services {
   display: -webkit-flex;
@@ -617,6 +633,18 @@ ul.split-content {
   .split-content li p {
     font-size: 18px;
     /* margin: 0; */
+  }
+}
+
+@media (max-width:425px) {
+  .split-content li {
+    padding: 0;
+    flex-basis: 100%;
+  }
+
+  .split-area a.banner-btn {
+    width: 100%;
+    text-align: center;
   }
 }
 
