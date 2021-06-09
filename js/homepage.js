@@ -1,7 +1,14 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoicmFmZmFlbGVyaWNjYXJkZWxsaSIsImEiOiJjazNpcmZoMzIwYWVzM2NwNm92eWpxbTdiIn0.15M15i30LdC8jUWkVsMSfg';
+var bounds = [
+[9.077, 45.411], // Southwest coordinates
+[9.327, 45.553] // Northeast coordinates
+];
 var map = new mapboxgl.Map({
 container: 'map',
-style: 'mapbox://styles/raffaelericcardelli/ckpi7qoex04lt17t72gud5nuv'
+style: 'mapbox://styles/raffaelericcardelli/ckpi7qoex04lt17t72gud5nuv',
+center: [ 9.190, 45.467],
+zoom: "11.93",
+maxBounds: bounds
 });
 
 const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
@@ -21,6 +28,7 @@ toggleButton.addEventListener('click', function() {
 function toggleMenu() {
   if (menu.classList.contains("active")) {
     menu.classList.remove("active");
+        menu.classList.add("border-radius-active");
     // menu.style.height = "auto";
     toggleButton.innerHTML = "<i class='fas fa-bars'></i>";
     toggleButton.classList.add("menu-closed");
@@ -33,7 +41,7 @@ function toggleMenu() {
 
   } else {
     menu.classList.add("active");
-    menu.classList.remove("border-radius-inactive");
+    menu.classList.remove("border-radius-active");
     // menu.style.height = "100vh";
     toggleButton.innerHTML = "<i class='fas fa-times'></i>";
     toggleButton.classList.add("menu-open");
@@ -101,6 +109,16 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(document.querySelector('.worker-count'));
+
+map.on('click', function() {
+  if (map.scrollWheelZoom.enabled()) {
+    map.scrollWheelZoom.disable();
+    }
+    else {
+    map.scrollWheelZoom.enable();
+    }
+  });
+
 
 function resize() {
   if(window.innerWidth <= 768) {

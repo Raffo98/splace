@@ -52,7 +52,6 @@ a {
   justify-content: space-between;
   background-color: #000;
   color: #fff;
-  border-radius: 0px 0px 30px 30px;
   font-family: "Steradian-bold";
   height: 100px;
   user-select: none;
@@ -675,8 +674,9 @@ ul.split-content {
     flex-basis: 100%;
   }
 
-  .split-area a.banner-btn {
-    width: 100vw;
+  .split-content li a {
+    display: block;
+    width: 100%;
     text-align: center;
   }
 }
@@ -761,6 +761,7 @@ ul.split-content {
 #map {
   width: 70%;
   height: 500px;
+  border-radius: 30px 30px 30px 30px;
 }
 
 @media (max-width: 1366px) {
@@ -901,6 +902,10 @@ ul.mockup-content {
 
 @media (max-width: 1000px) {
 
+  .mockup-1-left {
+    max-width: 100%;
+  }
+
   .mockup-1-left,
   .mockup-1-right {
     flex-basis: 100%;
@@ -941,6 +946,7 @@ ul.mockup-content {
   }
 
   .mockup-2-right {
+    max-width: 100%;
     order: 1;
   }
 
@@ -977,6 +983,10 @@ ul.mockup-content {
 }
 
 @media (max-width: 1000px) {
+
+  .mockup-3-left {
+    max-width: 100%;
+  }
 
   .mockup-3-left,
   .mockup-3-right {
@@ -1221,6 +1231,10 @@ h2 {
   color: #999;
 }
 
+.btn-wrapper {
+  width: 100%;
+}
+
 .footer-btn {
   padding-top: 70px;
   font-family: "Steradian-bold";
@@ -1229,6 +1243,8 @@ h2 {
   background: #fff;
   border-radius: 30px;
   display: inline-block;
+  width: 100%;
+  text-align: center;
   white-space: nowrap;
 }
 
@@ -1277,3 +1293,17 @@ h2 {
     margin-top: 0;
   }
 }
+
+/* @media screen (max-width: 425px) {
+
+  .footer-btn-container li {
+    display: block;
+    width: 100%;
+  }
+
+  .footer-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+} */
