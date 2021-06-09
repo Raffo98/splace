@@ -897,7 +897,7 @@ ul.mockup-content {
 
 .mockup-1-right h2 {
   margin-bottom: 3%;
-  font-size: 28px;
+  font-size: 48px;
 }
 
 @media (max-width: 1000px) {
@@ -909,6 +909,22 @@ ul.mockup-content {
   .mockup-1-left,
   .mockup-1-right {
     flex-basis: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .mockup-1-right h2 {
+    margin-bottom: 3%;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .mockup-1-right h2 {
+    margin-bottom: 3%;
+    font-size: 32px;
   }
 }
 
@@ -936,7 +952,7 @@ ul.mockup-content {
 
 .mockup-2-left h2 {
   margin-bottom: 3%;
-  font-size: 28px;
+  font-size: 48px;
 }
 
 @media (max-width: 1000px) {
@@ -955,6 +971,23 @@ ul.mockup-content {
     flex-basis: 100%;
   }
 }
+
+@media (max-width: 768px) {
+
+  .mockup-2-left h2 {
+    margin-bottom: 3%;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .mockup-2-left h2 {
+    margin-bottom: 3%;
+    font-size: 32px;
+  }
+}
+
 
 /*mockup area 3*/
 .mockup-3-left {
@@ -979,7 +1012,7 @@ ul.mockup-content {
 
 .mockup-3-right h2 {
   margin-bottom: 3%;
-  font-size: 28px;
+  font-size: 48px;
 }
 
 @media (max-width: 1000px) {
@@ -992,6 +1025,24 @@ ul.mockup-content {
   .mockup-3-right {
     flex-basis: 100%;
   }
+}
+
+@media (max-width: 768px) {
+
+  .mockup-3-right h2 {
+    margin-bottom: 3%;
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  .mockup-3-right h2 {
+    margin-bottom: 3%;
+    font-size: 32px;
+  }
+
 }
 
 /*cta area*/
