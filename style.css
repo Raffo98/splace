@@ -92,6 +92,28 @@ a.login-btn {
   display: none;
 }
 
+.menu-closed {
+  position: static;
+}
+
+.menu-open {
+  position: absolute;
+}
+
+.menu-open-ham {
+  right: 0;
+}
+
+.border-radius-active {
+  border-radius: 0px 0px 30px 30px;
+}
+
+@media (min-width:768px) {
+  .logo-position {
+    position: static;
+  }
+}
+
 @media (max-width:1000px) {
   header nav li {
     margin: 0 30px;

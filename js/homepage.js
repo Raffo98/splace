@@ -7,7 +7,7 @@ style: 'mapbox://styles/raffaelericcardelli/ckpi7qoex04lt17t72gud5nuv'
 const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
 const navbarText = document.getElementsByClassName('navbarText');
 const navbarLine = document.getElementsByClassName('navbarLine')[0];
-const menu = document.querySelector(".listSection");
+const menu = document.querySelector(".menu ul");
 const logo = document.querySelector(".vale");
 
 var counter_animation = 0;
@@ -23,16 +23,28 @@ function toggleMenu() {
     menu.classList.remove("active");
     // menu.style.height = "auto";
     toggleButton.innerHTML = "<i class='fas fa-bars'></i>";
-    logo.style.position = "relative";
-    toggleButton.style.position = "relative";
+    toggleButton.classList.add("menu-closed");
+    logo.classList.add("menu-closed");
+    toggleButton.classList.remove("menu-open");
+    toggleButton.classList.remove("menu-open-ahm");
+    logo.classList.remove("menu-open");
+    // logo.style.position = "static";
+    // toggleButton.style.position = "static";
 
   } else {
     menu.classList.add("active");
+    menu.classList.remove("border-radius-inactive");
     // menu.style.height = "100vh";
     toggleButton.innerHTML = "<i class='fas fa-times'></i>";
-    logo.style.position = "absolute";
-    toggleButton.style.position = "absolute";
-    toggleButton.style.right = "0px";
+    toggleButton.classList.add("menu-open");
+    logo.classList.add("menu-open");
+    logo.classList.add("logo-position");
+    toggleButton.classList.add("menu-open-ham");
+    toggleButton.classList.remove("menu-closed");
+    logo.classList.remove("menu-closed");
+    // logo.style.position = "absolute";
+    // toggleButton.style.position = "absolute";
+    // toggleButton.style.right = "0px";
 
   }
 }
