@@ -58,3 +58,7 @@ $('.next-section').each(function() {
         }, 200 );
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const carousel = new FlexCarousel('.gallery');
+});

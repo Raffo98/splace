@@ -278,7 +278,7 @@ section p {
   margin-bottom: 15px;
 }
 
-span {
+h1 span, h2 span {
   background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
   background-size: 100% 70%;
   background-position: 0 6%;
@@ -347,7 +347,7 @@ a.banner-btn {
     font-size: 65px;
   }
 
-  span {
+h1 span, h2 span {
     background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
     background-size: 100% 70%;
     background-position: 0 6%;
@@ -368,7 +368,7 @@ a.banner-btn {
     font-size: 48px;
   }
 
-  span {
+h1 span, h2 span {
     background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
     background-size: 100% 70%;
     background-position: 0 6%;
@@ -395,7 +395,7 @@ a.banner-btn {
     font-size: 40px;
   }
 
-  span {
+h1 span, h2 span {
     background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
     background-size: 100% 70%;
     background-position: 0 6%;
@@ -439,7 +439,7 @@ a.banner-btn {
     display: block;
   }
 
-  span {
+h1 span, h2 span {
     background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
     background-size: 100% 70%;
     background-position: 0 6%;
@@ -546,6 +546,24 @@ ul.mockup-content {
   }
 }
 
+@media (max-width: 768px) {
+
+  .mockup-1-right h2 {
+    margin-bottom: 3%;
+    font-size: 40px;
+    line-height: 1em;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .mockup-1-right h2 {
+    margin-bottom: 3%;
+    font-size: 32px;
+    line-height: 1em;
+  }
+}
+
 /*mockup area 2*/
 .mockup-2-right {
   max-width: 60%;
@@ -590,6 +608,24 @@ ul.mockup-content {
   }
 }
 
+@media (max-width: 768px) {
+
+  .mockup-2-left h2 {
+    margin-bottom: 3%;
+    font-size: 40px;
+    line-height: 1em;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .mockup-2-left h2 {
+    margin-bottom: 3%;
+    font-size: 32px;
+    line-height: 1em;
+  }
+}
+
 /*mockup area 3*/
 .mockup-3-left {
   max-width: 60%;
@@ -626,6 +662,102 @@ ul.mockup-content {
   .mockup-3-right {
     flex-basis: 100%;
   }
+}
+
+@media (max-width: 768px) {
+
+  .mockup-3-right h2 {
+    margin-bottom: 3%;
+    font-size: 40px;
+    line-height: 1em;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  .mockup-3-right h2 {
+    margin-bottom: 3%;
+    font-size: 32px;
+    line-height: 1em;
+  }
+
+}
+
+/*carousel area*/
+.carousel-area {
+  height: 100vh;
+}
+
+ul .gallery-content{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-img {
+  max-height: 50vh;
+  border-radius: 30px;
+  flex-basis: 40%;
+  margin-right: 30px;
+}
+
+.review-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 30px;
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 15%));
+  flex-basis: 40%;
+  margin-left: 30px;
+}
+
+.review-container h2, .review-container p {
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+.review-container h2 {
+    font-family: "Steradian-bold";
+    font-size: 22px;
+    margin-top: 30px;
+    line-height: 1em;
+}
+
+.review-container p {
+    font-family: "Steradian-regular";
+}
+
+.review-container span {
+  font-family: "Steradian-regular";
+  font-size: 16px;
+  color: #999999;
+  float: right;
+  background: none;
+}
+
+.review-dot {
+  margin-top: 10px;
+  color: #72FDC1;
+}
+
+.review-dot i {
+  padding-right: 3px;
+}
+
+.review-location {
+    color: #999999;
 }
 
 /*cta area*/
@@ -740,6 +872,41 @@ ul.mockup-content {
   }
 }
 
+@media (max-width: 768px) {
+  .cta-content h1 {
+    font-size: 40px;
+    line-height: 1em;
+  }
+
+  .cta-content p {
+    padding-top: 30px;
+    font-size: 16px;
+  }
+
+  #cta-btn {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .cta-content h1 {
+    font-size: 32px;
+    line-height: 1em;
+  }
+
+  .cta-content p {
+    padding-top: 30px;
+    font-size: 16px;
+  }
+
+  #cta-btn {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+}
 /*contact area*/
 /* #contact {
   background: #fff;
