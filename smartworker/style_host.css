@@ -297,7 +297,7 @@ section p {
 }
 
 h1 span, h2 span {
-  background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
+  background: linear-gradient(to top, #29E4ED 60%, transparent 30%);
   background-size: 100% 70%;
   background-position: 0 6%;
   background-repeat: no-repeat;
@@ -366,7 +366,7 @@ a.banner-btn {
   }
 
   h1 span, h2 span {
-    background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
+    background: linear-gradient(to top, #29E4ED 60%, transparent 30%);
     background-size: 100% 70%;
     background-position: 0 6%;
     background-repeat: no-repeat;
@@ -387,7 +387,7 @@ a.banner-btn {
   }
 
   h1 span, h2 span {
-    background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
+    background: linear-gradient(to top, #29E4ED 60%, transparent 30%);
     background-size: 100% 70%;
     background-position: 0 6%;
     background-repeat: no-repeat;
@@ -414,7 +414,7 @@ a.banner-btn {
   }
 
   h1 span, h2 span {
-    background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
+    background: linear-gradient(to top, #29E4ED 60%, transparent 30%);
     background-size: 100% 70%;
     background-position: 0 6%;
     background-repeat: no-repeat;
@@ -457,7 +457,7 @@ a.banner-btn {
   }
 
   h1 span, h2 span {
-    background: linear-gradient(to top, #72FDC1 60%, transparent 30%);
+    background: linear-gradient(to top, #29E4ED 60%, transparent 30%);
     background-size: 100% 70%;
     background-position: 0 6%;
     background-repeat: no-repeat;
@@ -779,7 +779,7 @@ ul .gallery-content {
 
 .review-dot {
   margin-top: 10px;
-  color: #72FDC1;
+  color: #29E4ED;
 }
 
 .review-dot i {
