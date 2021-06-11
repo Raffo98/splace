@@ -256,7 +256,7 @@ section p {
 }
 
 .banner-area .banner-img {
-  background-image: url("assets/home/hero.png");
+  background-image: url("assets/home/Smartworker.png");
   position: absolute;
   top: 0;
   left: 0;
@@ -686,6 +686,12 @@ ul.mockup-content {
 
 /*carousel area*/
 .carousel-area {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -702,10 +708,12 @@ ul .gallery-content{
 }
 
 .gallery-img {
-  max-height: 50vh;
+  max-width: 30vw;
   border-radius: 30px;
   flex-basis: 40%;
   margin-right: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .review-container {
@@ -721,6 +729,8 @@ ul .gallery-content{
   filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 15%));
   flex-basis: 40%;
   margin-left: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .review-container h2, .review-container p {
@@ -728,10 +738,22 @@ ul .gallery-content{
   margin-right: 20px;
 }
 
+.title-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-right: 20px;
+
+}
+
 .review-container h2 {
     font-family: "Steradian-bold";
     font-size: 22px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     line-height: 1em;
 }
 
@@ -744,6 +766,7 @@ ul .gallery-content{
   font-size: 16px;
   color: #999999;
   float: right;
+
   background: none;
 }
 
@@ -758,6 +781,41 @@ ul .gallery-content{
 
 .review-location {
     color: #999999;
+}
+
+
+@media (max-width: 1000px) {
+  .carousel-area {
+    height: 60vh;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .gallery-img {
+    display: none;
+  }
+
+  .review-container {
+    flex-basis: 80%;
+    margin-left: 0;
+  }
+
+  .review-container h2 {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 479px) {
+
+  .review-container {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+
+  /* .arrows {
+    display: none;
+  } */
+
 }
 
 /*cta area*/

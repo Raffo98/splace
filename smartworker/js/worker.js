@@ -59,6 +59,37 @@ $('.next-section').each(function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const carousel = new FlexCarousel('.gallery');
-});
+// document.addEventListener('DOMContentLoaded', function () {
+    const carousel = new FlexCarousel('.gallery', {
+      autoplay: true,
+      arrows: false,
+      responsive: [
+       {
+           breakpoint: 479,
+           options: {
+               arrows: true
+           },
+       },
+   ]
+    });
+// });
+
+// function mediaquery(x) {
+//   if (x.matches) { // If media query matches
+//     console.log("x matches");
+//     const carousel = new FlexCarousel('.gallery', {
+//             console.log("RINT O CARUSL"),
+//       arrows: false
+//     });
+//   } else {
+//     console.log("x not matches");
+//     const carousel = new FlexCarousel('.gallery', {
+//       console.log("RINT O CARUSL"),
+//       arrows: true
+//     });
+//   }
+// }
+//
+// var x = window.matchMedia("(max-width: 479px)");
+// mediaquery(x); // Call listener function at run time
+// x.addListener(mediaquery); // Attach listener function on state changes
