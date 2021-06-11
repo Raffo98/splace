@@ -75,8 +75,6 @@ $('.next-section').each(function() {
     const carouselBtnNext = document.querySelector(".fc.fc-has-arrows.fc-has-arrows-overlay .fc-next");
     const carouselBtnPrev = document.querySelector(".fc.fc-has-arrows.fc-has-arrows-overlay .fc-prev");
     console.log(carouselBtnPrev);
-    carouselBtnNext.style.display = "none";
-    carouselBtnPrev.style.display = "none";
 // });
 
 

@@ -719,15 +719,6 @@ ul .gallery-content {
   align-items: center;
 }
 
-.gallery-img {
-  max-width: 30vw;
-  border-radius: 30px;
-  flex-basis: 40%;
-  margin-right: 30px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 .review-container {
   display: -webkit-flex;
   display: -moz-flex;
@@ -739,8 +730,8 @@ ul .gallery-content {
   background-color: #fff;
   border-radius: 30px;
   filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 15%));
-  flex-basis: 40%;
-  margin-left: 30px;
+  flex-basis: 90%;
+  /* margin-left: 30px; */
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -770,6 +761,7 @@ ul .gallery-content {
 
 .review-container p {
   font-family: "Steradian-regular";
+  margin-top: 20px;
 }
 
 .review-container span {
@@ -798,10 +790,6 @@ ul .gallery-content {
     height: 60vh;
     padding-top: 25px;
     padding-bottom: 25px;
-  }
-
-  .gallery-img {
-    display: none;
   }
 
   .review-container {

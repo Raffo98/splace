@@ -61,22 +61,15 @@ $('.next-section').each(function() {
 
 // document.addEventListener('DOMContentLoaded', function () {
     const carousel = new FlexCarousel('.gallery', {
-      autoplay: true
-   //    arrows: false,
-   //    responsive: [
-   //     {
-   //         breakpoint: 479,
-   //         options: {
-   //             arrows: true
-   //         },
-   //     },
-   // ]
+      autoplay: true,
+      slidesPerPage: 2
     });
     const carouselBtnNext = document.querySelector(".fc.fc-has-arrows.fc-has-arrows-overlay .fc-next");
     const carouselBtnPrev = document.querySelector(".fc.fc-has-arrows.fc-has-arrows-overlay .fc-prev");
-    console.log(carouselBtnPrev);
-    carouselBtnNext.style.display = "none";
-    carouselBtnPrev.style.display = "none";
+    console.log(carousel);
+    carouselBtnNext.style.justifyContent = "flex-end";
+    carouselBtnPrev.style.justifyContent = "flex-start";
+
 // });
 
 
@@ -86,6 +79,7 @@ function mediaquery(x) {
     console.log("x matches");
     carouselBtnNext.style.display = "none";
     carouselBtnPrev.style.display = "none";
+    carousel.slidesPerPage = 1;
   } else {
     console.log("x not matches");
     carouselBtnNext.style.display = "flex";
@@ -98,9 +92,11 @@ function mediaquery(x) {
     carouselBtnPrev.style.display = "-ms-flex";
     carouselBtnNext.style.display = "-o-flex";
     carouselBtnPrev.style.display = "-o-flex";
+    carousel.slidesPerPage = 2;
   }
 }
 
 var x = window.matchMedia("(max-width: 479px)");
+
 mediaquery(x); // Call listener function at run time
 x.addListener(mediaquery); // Attach listener function on state changes
