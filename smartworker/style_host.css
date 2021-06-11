@@ -118,7 +118,7 @@ navbarText p {
   text-underline-position: under;
 }
 
-#navbarText-worker {
+#navbarText-host {
   text-decoration: solid underline white 2px;
 }
 
