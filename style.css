@@ -481,6 +481,7 @@ a.banner-btn {
     width: 100%;
     text-align: center;
   }
+
   a.banner-btn{
     margin-right: 0px;
   }
@@ -1158,6 +1159,22 @@ ul.mockup-content {
   .cta-content p {
     font-size: 16px;
   }
+}
+
+@media (max-width: 425px) {
+
+  .cta-center {
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-basis: 100%;
+  }
+
+  #cta-btn {
+
+    display: block;
+    width: 100%;
+  }
+
 }
 
 /* footer area*/

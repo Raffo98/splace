@@ -645,8 +645,10 @@ ul.mockup-content {
 
 /*mockup area 3*/
 .mockup-3-left {
-  max-width: 60%;
+  max-width: 50%;
   flex-basis: 70%;
+  margin-right: 150px;
+
 }
 
 .mockup-3-right {
@@ -681,6 +683,10 @@ ul.mockup-content {
 }
 
 @media (max-width: 768px) {
+  .mockup-3-left {
+    margin-right: 0;
+  }
+
   .mockup-3-right h2 {
     margin-bottom: 3%;
     font-size: 40px;
@@ -704,7 +710,9 @@ ul.mockup-content {
   display: -o-flex;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 ul .gallery-content {
@@ -825,6 +833,103 @@ ul .gallery-content {
     margin-top: 0;
   }
 }
+
+/*partner area*/
+.partner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+ul.partner-content {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partner-content li:first-child {
+  color: #000;
+  flex-basis: 100%;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+
+
+.partner-content li {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  flex-basis: 15%;
+}
+
+.partner-content li h2 {
+  font-size: 22px;
+}
+
+@media (max-width:1024px) {
+
+  ul.partner-content {
+    justify-content: center;
+  }
+
+  .partner-content li {
+    flex-basis: 40%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .partner-content li:first-child {
+    margin-bottom: 0;
+  }
+
+  .partner-content li img {
+        width: 60%;
+        margin-bottom: 65px;
+  }
+}
+
+@media (max-width:475px) {
+
+  .partner {
+    height: 35vh;
+  }
+
+  .partner-content li {
+    flex-basis: 40%;
+  }
+
+  .partner-content li img {
+        width: 80%;
+  }
+
+}
+
+/* @media (max-width:768px) {
+  .partner-content li {
+    padding: 0;
+    flex-basis: 100%;
+    margin-bottom: 65px;
+  }
+} */
 
 /*cta area*/
 .cta {
@@ -957,6 +1062,13 @@ ul .gallery-content {
 }
 
 @media (max-width: 425px) {
+
+  .cta-center {
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-basis: 100%;
+  }
+
   .cta-content h1 {
     font-size: 32px;
     line-height: 1em;
@@ -971,6 +1083,8 @@ ul .gallery-content {
     text-align: center;
     margin-top: 10px;
     margin-right: 0;
+    display: block;
+    width: 100%;
   }
 }
 

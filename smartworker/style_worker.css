@@ -969,6 +969,13 @@ ul .gallery-content {
 }
 
 @media (max-width: 425px) {
+
+  .cta-center {
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-basis: 100%;
+  }
+
   .cta-content h1 {
     font-size: 32px;
     line-height: 1em;
@@ -983,6 +990,8 @@ ul .gallery-content {
     text-align: center;
     margin-top: 10px;
     margin-right: 0;
+    display: block;
+    width: 100%;
   }
 }
 
