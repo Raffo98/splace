@@ -943,19 +943,21 @@ ul.partner-content {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .cta-content img {
-  width: 30%;
-  flex-basis: 20%;
+  width: 63%;
+  flex-basis: 50%;
   margin: 0;
 }
 
 .cta-center {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
   text-align: center;
 }
 
@@ -966,10 +968,16 @@ ul.partner-content {
   margin-bottom: 10px;
 }
 
-.cta-content p {
+.cta-content h2 {
   font-size: 24px;
   font-family: "Steradian-regular";
   text-align: center;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#cta-btn {
+  margin-right: 0;
 }
 
 @media (max-width: 1515px) {
@@ -977,37 +985,37 @@ ul.partner-content {
     font-size: 65px;
   }
 
-  .cta-content p {
+  .cta-content h2 {
     font-size: 24px;
   }
 }
 
-@media (max-width: 1243px) {
+@media (max-width: 1500px) {
   .cta-content h1 {
     font-size: 48px;
   }
 
-  .cta-content p {
+  .cta-content h2 {
     font-size: 16px;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .cta-content h1 {
-    font-size: 48px;
+    font-size: 32px;
     line-height: 1em;
   }
 
-  .cta-content p {
-    padding-top: 30px;
+  .cta-content h2 {
+    padding-top: 10px;
     font-size: 16px;
   }
 
-  .cta-content img {
-    width: 35%;
-    flex-basis: 20%;
+  /* .cta-content img {
+    width: 40%;
+    flex-basis: 40%;
     margin: 0;
-  }
+  } */
 
   #cta-btn {
     text-align: center;
@@ -1031,6 +1039,7 @@ ul.partner-content {
   }
 
   .cta-center {
+    position: static;
     flex-basis: 75%;
   }
 
@@ -1038,20 +1047,19 @@ ul.partner-content {
     font-size: 48px;
   }
 
-  .cta-content p {
+  .cta-content h2 {
     font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
   .cta-content h1 {
-    font-size: 40px;
+    font-size: 48px;
     line-height: 1em;
   }
 
-  .cta-content p {
-    padding-top: 30px;
-    font-size: 16px;
+  .cta-content h2 {
+    font-size: 22px;
   }
 
   #cta-btn {
@@ -1062,6 +1070,7 @@ ul.partner-content {
 }
 
 @media (max-width: 425px) {
+
 
   .cta-center {
     margin-left: 15px;
@@ -1074,8 +1083,7 @@ ul.partner-content {
     line-height: 1em;
   }
 
-  .cta-content p {
-    padding-top: 30px;
+  .cta-content h2 {
     font-size: 16px;
   }
 
@@ -1085,6 +1093,10 @@ ul.partner-content {
     margin-right: 0;
     display: block;
     width: 100%;
+  }
+
+  .cta br {
+    display: none;
   }
 }
 

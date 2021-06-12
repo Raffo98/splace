@@ -585,7 +585,7 @@ ul.mockup-content {
 
 /*mockup area 2*/
 .mockup-2-right {
-  max-width: 60%;
+  max-width: 50%;
   flex-basis: 60%;
 }
 
@@ -645,8 +645,9 @@ ul.mockup-content {
 
 /*mockup area 3*/
 .mockup-3-left {
-  max-width: 60%;
+  max-width: 45%;
   flex-basis: 70%;
+  margin-right: 150px;
 }
 
 .mockup-3-right {
@@ -671,7 +672,8 @@ ul.mockup-content {
 
 @media (max-width: 1000px) {
   .mockup-3-left {
-    max-width: 100%;
+    max-width: 70%;
+    margin-right: 0;
   }
 
   .mockup-3-left,
