@@ -698,6 +698,14 @@ ul.mockup-content {
   }
 }
 
+/*divider area*/
+.divider {
+  margin: 0;
+  background-image: url("assets/home/divider-worker.png");
+  width: 100vw;
+  height: 100vh;
+}
+
 /*carousel area*/
 .carousel-area {
   display: -webkit-flex;
