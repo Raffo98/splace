@@ -714,6 +714,7 @@ ul.mockup-content {
   .divider {
     height: 50vh;
   }
+}
 
   @media (max-width: 1024px) {
     .divider {
