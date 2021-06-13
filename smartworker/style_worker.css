@@ -554,7 +554,8 @@ ul.mockup-content {
 
 .mockup-1-right h2 {
   margin-bottom: 3%;
-  font-size: 28px;
+  font-size: 48px;
+  line-height: 1em;
 }
 
 @media (max-width: 1000px) {
@@ -608,7 +609,8 @@ ul.mockup-content {
 
 .mockup-2-left h2 {
   margin-bottom: 3%;
-  font-size: 28px;
+  font-size: 48px;
+  line-height: 1em;
 }
 
 @media (max-width: 1000px) {
@@ -668,7 +670,8 @@ ul.mockup-content {
 
 .mockup-3-right h2 {
   margin-bottom: 3%;
-  font-size: 28px;
+  font-size: 48px;
+  line-height: 1em;
 }
 
 @media (max-width: 1000px) {
@@ -703,33 +706,14 @@ ul.mockup-content {
 .divider {
   margin: 0;
   background-image: url("assets/home/divider-worker.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
+  display: inline-block;
 }
 
-@media (max-width: 1366px) {
-  .divider {
-    height: 50vh;
-  }
-}
-
-  @media (max-width: 1024px) {
-    .divider {
-      height: 30vh;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    .divider {
-      padding-top: 0;
-      padding-bottom: 0;
-      height: 50vh;
-    }
-  }
-}
   /*carousel area*/
   .carousel-area {
     display: -webkit-flex;
