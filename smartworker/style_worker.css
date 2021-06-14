@@ -540,7 +540,7 @@ ul.mockup-content {
 .mockup-1-right {
   position: relative;
   font-family: 'Steradian-regular';
-  flex-basis: 30%;
+  flex-basis: 40%;
 }
 
 .mockup-area-1 p {
@@ -595,7 +595,7 @@ ul.mockup-content {
   position: relative;
   font-family: 'Steradian-regular';
   flex-basis: 40%;
-  padding-left: 100px;
+  padding-left: 80px;
 }
 
 .mockup-area-2 p {
@@ -847,13 +847,14 @@ ul.mockup-content {
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
     .carousel-area {
-      height: 80vh;
+      height: 90vh;
     }
 
     .review-container {
       margin-top: 0;
+      justify-content: center;
     }
   }
 

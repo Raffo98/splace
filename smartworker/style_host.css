@@ -586,15 +586,15 @@ ul.mockup-content {
 
 /*mockup area 2*/
 .mockup-2-right {
-  max-width: 60%;
-  flex-basis: 60%;
+  max-width: 55%;
+  flex-basis: 55%;
 }
 
 .mockup-2-left {
   position: relative;
   font-family: 'Steradian-regular';
   flex-basis: 40%;
-  padding-left: 100px;
+  padding-left: 80px;
 }
 
 .mockup-area-2 p {
@@ -949,6 +949,8 @@ ul.partner-content {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+  height: 60vh;
 }
 
 .cta-content img {
@@ -1073,6 +1075,10 @@ ul.partner-content {
 }
 
 @media (max-width: 425px) {
+
+  .cta-content{
+    height: 40vh;
+  }
 
 
   .cta-center {

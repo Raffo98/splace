@@ -623,7 +623,7 @@ ul.split-content {
 
 .split-content li h4 {
   font-family: "Steradian-bold";
-  font-size: 28px;
+  font-size: 42px;
   margin-bottom: 25px;
 }
 
@@ -934,8 +934,8 @@ ul.mockup-content {
 
 /*mockup area 2*/
 .mockup-2-right {
-  max-width: 60%;
-  flex-basis: 60%;
+  max-width: 55%;
+  flex-basis: 55%;
 }
 
 .mockup-2-left {
