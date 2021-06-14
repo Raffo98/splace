@@ -62,41 +62,58 @@ $('.next-section').each(function() {
 // document.addEventListener('DOMContentLoaded', function () {
     const carousel = new FlexCarousel('.gallery', {
       autoplay: true,
-      slidesPerPage: 2
+      slidesPerPage: 1,
+      arrows: false,
+      responsive: [
+        {
+            breakpoint: 425,
+            options: {
+                arrows: true
+            },
+        },
+        {
+            breakpoint: 768,
+            options: {
+                autoplay: false,
+                slidesPerPage: 2,
+                slidesScrolling: 1,
+
+            },
+        },
+
+    ],
     });
     const carouselBtnNext = document.querySelector(".fc.fc-has-arrows.fc-has-arrows-overlay .fc-next");
     const carouselBtnPrev = document.querySelector(".fc.fc-has-arrows.fc-has-arrows-overlay .fc-prev");
     console.log(carousel);
-    carouselBtnNext.style.justifyContent = "flex-end";
-    carouselBtnPrev.style.justifyContent = "flex-start";
+    // carouselBtnNext.style.justifyContent = "flex-end";
+    // carouselBtnPrev.style.justifyContent = "flex-start";
 
 // });
 
 
-
-function mediaquery(x) {
-  if (x.matches) { // If media query matches
-    console.log("x matches");
-    carouselBtnNext.style.display = "none";
-    carouselBtnPrev.style.display = "none";
-    carousel.slidesPerPage = 1;
-  } else {
-    console.log("x not matches");
-    carouselBtnNext.style.display = "flex";
-    carouselBtnPrev.style.display = "flex";
-    carouselBtnNext.style.display = "-webkit-flex";
-    carouselBtnPrev.style.display = "-webkit-flex";
-    carouselBtnNext.style.display = "-moz-flex";
-    carouselBtnPrev.style.display = "-moz-flex";
-    carouselBtnNext.style.display = "-ms-flex";
-    carouselBtnPrev.style.display = "-ms-flex";
-    carouselBtnNext.style.display = "-o-flex";
-    carouselBtnPrev.style.display = "-o-flex";
-    carousel.slidesPerPage = 2;
-  }
-}
-
-var x = window.matchMedia("(max-width: 479px)");
-
-mediaquery(x); // Call listener function at run time
-x.addListener(mediaquery); // Attach listener function on state changes
+//
+// function mediaquery(x) {
+//   if (x.matches) { // If media query matches
+//     console.log("x matches");
+//     carouselBtnNext.style.display = "none";
+//     carouselBtnPrev.style.display = "none";
+//   } else {
+//     console.log("x not matches");
+//     carouselBtnNext.style.display = "flex";
+//     carouselBtnPrev.style.display = "flex";
+//     carouselBtnNext.style.display = "-webkit-flex";
+//     carouselBtnPrev.style.display = "-webkit-flex";
+//     carouselBtnNext.style.display = "-moz-flex";
+//     carouselBtnPrev.style.display = "-moz-flex";
+//     carouselBtnNext.style.display = "-ms-flex";
+//     carouselBtnPrev.style.display = "-ms-flex";
+//     carouselBtnNext.style.display = "-o-flex";
+//     carouselBtnPrev.style.display = "-o-flex";
+//   }
+// }
+//
+// var x = window.matchMedia("(max-width: 479px)");
+//
+// mediaquery(x); // Call listener function at run time
+// x.addListener(mediaquery); // Attach listener function on state changes

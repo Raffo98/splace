@@ -722,6 +722,7 @@ ul.mockup-content {
     display: -o-flex;
     display: flex;
     justify-content: center;
+    height: 80vh;
 
   }
 
@@ -735,7 +736,7 @@ ul.mockup-content {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+
   }
 
   .gallery-img {
