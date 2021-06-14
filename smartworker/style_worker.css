@@ -648,6 +648,7 @@ ul.mockup-content {
 
 /*mockup area 3*/
 .mockup-3-left {
+  padding-top: 120px;
   max-width: 45%;
   flex-basis: 70%;
   margin-right: 150px;
@@ -695,6 +696,9 @@ ul.mockup-content {
 }
 
 @media (max-width: 425px) {
+  .mockup-3-left {
+      padding-top: 30px;
+  }
   .mockup-3-right h2 {
     margin-bottom: 3%;
     font-size: 32px;
@@ -740,7 +744,8 @@ ul.mockup-content {
   }
 
   .gallery-img {
-    max-width: 30vw;
+    max-width: 25vw;
+    max-height: 25vw;
     border-radius: 30px;
     flex-basis: 40%;
     margin-right: 30px;
