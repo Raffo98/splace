@@ -108,7 +108,7 @@ a.login-btn {
   border-radius: 0px 0px 30px 30px;
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .logo-position {
     position: static;
   }

@@ -34,7 +34,7 @@ function toggleMenu() {
     toggleButton.classList.add("menu-closed");
     logo.classList.add("menu-closed");
     toggleButton.classList.remove("menu-open");
-    toggleButton.classList.remove("menu-open-ahm");
+    toggleButton.classList.remove("menu-open-ham");
     logo.classList.remove("menu-open");
     // logo.style.position = "static";
     // toggleButton.style.position = "static";
