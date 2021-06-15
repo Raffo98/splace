@@ -60,32 +60,32 @@ $('.next-section').each(function() {
 });
 
 // document.addEventListener('DOMContentLoaded', function () {
-    const carousel = new FlexCarousel('.gallery', {
-      autoplay: true,
-      slidesPerPage: 1,
-      arrows: false,
-      responsive: [
-        {
-            breakpoint: 425,
-            options: {
-                arrows: true
-            },
-        },
-        {
-            breakpoint: 768,
-            options: {
-                autoplay: false,
-                slidesPerPage: 2,
-                slidesScrolling: 1,
-
-            },
-        },
-
-    ],
-    });
-    const carouselBtnNext = document.querySelector(".fc.fc-has-arrows.fc-has-arrows-overlay .fc-next");
-    const carouselBtnPrev = document.querySelector(".fc.fc-has-arrows.fc-has-arrows-overlay .fc-prev");
-    console.log(carousel);
+    // const carousel = new FlexCarousel('.gallery', {
+    //   autoplay: true,
+    //   slidesPerPage: 1,
+    //   arrows: false,
+    //   responsive: [
+    //     {
+    //         breakpoint: 425,
+    //         options: {
+    //             arrows: true
+    //         },
+    //     },
+    //     {
+    //         breakpoint: 768,
+    //         options: {
+    //             autoplay: false,
+    //             slidesPerPage: 2,
+    //             slidesScrolling: 1,
+    //
+    //         },
+    //     },
+    //
+    // ],
+    // });
+    // const carouselBtnNext = document.querySelector(".fc.fc-has-arrows.fc-has-arrows-overlay .fc-next");
+    // const carouselBtnPrev = document.querySelector(".fc.fc-has-arrows.fc-has-arrows-overlay .fc-prev");
+    // console.log(carousel);
     // carouselBtnNext.style.justifyContent = "flex-end";
     // carouselBtnPrev.style.justifyContent = "flex-start";
 
