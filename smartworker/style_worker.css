@@ -122,7 +122,7 @@ navbarText p {
   text-decoration: solid underline white 2px;
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .logo-position {
     position: static;
   }
@@ -903,6 +903,8 @@ ul.mockup-content {
     font-size: 24px;
     font-family: "Steradian-regular";
     text-align: center;
+    margin-bottom: 50px;
+    margin-top: 25px;
   }
 
   @media (max-width: 1515px) {

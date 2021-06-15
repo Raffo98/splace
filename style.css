@@ -625,6 +625,7 @@ ul.split-content {
   font-family: "Steradian-bold";
   font-size: 42px;
   margin-bottom: 25px;
+  line-height: 1em;
 }
 
 .split-content li p {
@@ -902,6 +903,7 @@ ul.mockup-content {
 .mockup-1-right h2 {
   margin-bottom: 3%;
   font-size: 48px;
+  line-height: 1em;
 }
 
 @media (max-width: 1000px) {
@@ -930,6 +932,10 @@ ul.mockup-content {
     margin-bottom: 3%;
     font-size: 32px;
   }
+
+  .mockup-area-1 p {
+    margin-bottom: 100px;
+  }
 }
 
 /*mockup area 2*/
@@ -957,6 +963,7 @@ ul.mockup-content {
 .mockup-2-left h2 {
   margin-bottom: 3%;
   font-size: 48px;
+  line-height: 1em;
 }
 
 @media (max-width: 1000px) {
@@ -990,6 +997,9 @@ ul.mockup-content {
     margin-bottom: 3%;
     font-size: 32px;
   }
+  .mockup-area-2 p {
+    margin-bottom: 100px;
+  }
 }
 
 
@@ -1017,12 +1027,14 @@ ul.mockup-content {
 .mockup-3-right h2 {
   margin-bottom: 3%;
   font-size: 48px;
+  line-height: 1em;
 }
 
 @media (max-width: 1000px) {
 
   .mockup-3-left {
     max-width: 100%;
+    margin-left: 15vw;
   }
 
   .mockup-3-left,
@@ -1046,7 +1058,6 @@ ul.mockup-content {
     margin-bottom: 3%;
     font-size: 32px;
   }
-
 }
 
 /*cta area*/
@@ -1078,15 +1089,18 @@ ul.mockup-content {
 }
 
 .cta-content h1 {
-  font-size: 80px;
+  font-size: 65px;
   font-family: "Steradian-bold";
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .cta-content p {
   font-size: 24px;
   font-family: "Steradian-regular";
   text-align: center;
+  margin-bottom: 50px;
+  margin-top: 25px;
 }
 
 @media (max-width: 1515px) {
