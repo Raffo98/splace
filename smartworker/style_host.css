@@ -676,6 +676,7 @@ ul.mockup-content {
 
 @media (max-width: 1000px) {
   .mockup-3-left {
+    margin-right: 0;
     max-width: 100%;
   }
 
@@ -714,7 +715,7 @@ ul.mockup-content {
 
 ul.review-content {
   width: 100%;
-  height: 80vh;
+
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -785,13 +786,28 @@ ul.review-content {
 
 @media (max-width: 1000px) {
 
+  .review-area {
+  padding: 0;
+  }
+
   .review-left,
   .review-right {
     flex-basis: 100%;
   }
 
   .review-content li {
-    padding: 8px;
+
+  }
+
+  .review-left {
+    order: 2;
+    padding: 0 50px;
+  }
+
+  .review-right {
+    order: 1;
+    border-radius: 0;
+
   }
 }
 
@@ -934,9 +950,8 @@ ul .gallery-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 300px;
+  padding-bottom: 300px;
 }
 
 ul.partner-content {
@@ -974,7 +989,19 @@ ul.partner-content {
   font-size: 22px;
 }
 
+@media (max-width:1366px) {
+  .partner {
+    padding-top: 175px;
+    padding-bottom: 175px;
+  }
+}
+
 @media (max-width:1024px) {
+  .partner {
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+
   ul.partner-content {
     justify-content: center;
   }
@@ -995,9 +1022,17 @@ ul.partner-content {
   }
 }
 
+@media (max-width:786px) {
+  .partner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 @media (max-width:475px) {
   .partner {
-    height: 35vh;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   .partner-content li {
@@ -1031,8 +1066,6 @@ ul.partner-content {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
-  height: 60vh;
 }
 
 .cta-content img {
@@ -1112,7 +1145,7 @@ ul.partner-content {
 
 @media (max-width: 958px) {
   .cta {
-    min-height: 50vh;
+    padding-bottom: 100px;
     justify-content: center;
   }
 
