@@ -1091,9 +1091,26 @@ ul.mockup-content {
   }
 
   .b-footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     text-align: center;
     color: #999;
     padding-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    font-family: "Steradian-regular";
+    text-align: left;
+  }
+
+  .b-footer a i {
+    font-size: 40px;
+    text-align: center;
+    padding-right: 23px;
+    color: #fff;
   }
 
   .l-footer p {
@@ -1161,5 +1178,16 @@ ul.mockup-content {
 
     #ios-btn {
       margin-top: 0;
+    }
+  }
+
+  @media (max-width: 475px) {
+
+    .b-footer {
+      padding-top: 25px;
+    }
+
+    .b-footer a i {
+      padding-bottom: 25px;
     }
   }
