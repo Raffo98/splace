@@ -86,9 +86,7 @@ a.login-btn {
   background: #fff;
   border-radius: 30px;
   margin-right: 59px;
-
 }
-
 
 .navbar-toggle {
   display: none;
@@ -207,7 +205,6 @@ a.login-btn {
     color: #fff;
     pointer-events: none;
   }
-
 }
 
 /*banner area*/
@@ -265,7 +262,6 @@ section p {
 }
 
 .banner-area h1 {
-  /* display: inline; */
   font-size: 84px;
   line-height: 1em;
   font-family: "Steradian-bold";
@@ -420,7 +416,6 @@ a.banner-btn:hover {
 }
 
 @media (max-width: 530px) {
-
   .vale {
     margin-top: 28.85px;
   }
@@ -476,6 +471,7 @@ a.banner-btn:hover {
     height: 100vh;
     padding-top: 120px;
   }
+
   .banner-area .btn-container {
     padding-top: 0;
   }
@@ -485,7 +481,7 @@ a.banner-btn:hover {
     text-align: center;
   }
 
-  a.banner-btn{
+  a.banner-btn {
     margin-right: 0px;
   }
 }
@@ -661,7 +657,6 @@ ul.split-content {
 
 .split-content img {
   width: 100%;
-  /* height: 286px; */
   border-radius: 30px;
   margin-bottom: 30px;
 }
@@ -678,8 +673,6 @@ ul.split-content {
   font-size: 18px;
   line-height: 1.5em;
   width: 100%;
-  /* margin-bottom: 60px; */
-  /* margin: 0; */
 }
 
 .split-content li:first-child {
@@ -714,7 +707,6 @@ ul.split-content {
 
   .split-content li p {
     font-size: 18px;
-    /* margin: 0; */
   }
 }
 
@@ -739,31 +731,6 @@ ul.split-content {
   -webkit-background-size: cover;
   background-size: cover;
 }
-
-
-/* @media (max-width: 1366px) {
-  .map-area {
-    min-height: 800px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .map-area {
-    min-height: 650px;
-  }
-}
-
-@media (max-width: 800px) {
-  .map-area {
-    min-height: 550px;
-  }
-}
-
-@media (max-width: 530px) {
-  .map-area {
-    min-height: 550px;
-  }
-} */
 
 .map-content {
   display: -webkit-flex;
@@ -818,9 +785,6 @@ ul.split-content {
   .map-content h1 {
     font-size: 60px;
   }
-  /* .map-area {
-    min-height: 100px;
-  } */
 }
 
 @media (max-width: 1100px) {
@@ -843,6 +807,7 @@ ul.split-content {
   .map-content h1 {
     font-size: 40px;
   }
+
   #map {
     width: 100%;
     height: 500px;
@@ -854,7 +819,6 @@ ul.split-content {
 }
 
 @media (max-width: 768px) {
-
   .map-area {
     padding-top: 50px;
   }
@@ -895,7 +859,6 @@ ul.split-content {
     font-size: 40px;
   }
 }
-
 
 /*mockup area*/
 #mockup-1 {
@@ -952,7 +915,6 @@ ul.mockup-content {
 }
 
 @media (max-width: 1000px) {
-
   .mockup-1-left {
     max-width: 100%;
   }
@@ -964,7 +926,6 @@ ul.mockup-content {
 }
 
 @media (max-width: 768px) {
-
   .mockup-1-right h2 {
     margin-bottom: 3%;
     font-size: 40px;
@@ -972,7 +933,6 @@ ul.mockup-content {
 }
 
 @media (max-width: 425px) {
-
   .mockup-1-right h2 {
     margin-bottom: 3%;
     font-size: 32px;
@@ -1029,7 +989,6 @@ ul.mockup-content {
 }
 
 @media (max-width: 768px) {
-
   .mockup-2-left h2 {
     margin-bottom: 3%;
     font-size: 40px;
@@ -1037,16 +996,15 @@ ul.mockup-content {
 }
 
 @media (max-width: 425px) {
-
   .mockup-2-left h2 {
     margin-bottom: 3%;
     font-size: 32px;
   }
+
   .mockup-area-2 p {
     margin-bottom: 100px;
   }
 }
-
 
 /*mockup area 3*/
 .mockup-3-left {
@@ -1076,7 +1034,6 @@ ul.mockup-content {
 }
 
 @media (max-width: 1000px) {
-
   .mockup-3-left {
     max-width: 100%;
     margin-left: 15vw;
@@ -1089,16 +1046,13 @@ ul.mockup-content {
 }
 
 @media (max-width: 768px) {
-
   .mockup-3-right h2 {
     margin-bottom: 3%;
     font-size: 40px;
   }
-
 }
 
 @media (max-width: 425px) {
-
   .mockup-3-right h2 {
     margin-bottom: 3%;
     font-size: 32px;
@@ -1117,7 +1071,6 @@ ul.mockup-content {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -1192,7 +1145,6 @@ ul.mockup-content {
   }
 }
 
-
 @media (max-width: 958px) {
   .cta {
     min-height: 50vh;
@@ -1203,7 +1155,7 @@ ul.mockup-content {
     justify-content: center;
   }
 
-  .cta-content img{
+  .cta-content img {
     display: none;
   }
 
@@ -1221,7 +1173,6 @@ ul.mockup-content {
 }
 
 @media (max-width: 425px) {
-
   .cta-center {
     margin-left: 15px;
     margin-right: 15px;
@@ -1229,11 +1180,9 @@ ul.mockup-content {
   }
 
   #cta-btn {
-
     display: block;
     width: 100%;
   }
-
 }
 
 /* footer area*/
@@ -1402,7 +1351,6 @@ h2 {
 }
 
 @media (max-width: 475px) {
-
   .b-footer {
     padding-top: 25px;
   }

@@ -269,10 +269,6 @@ section p {
   margin-top: 9.3vw;
 }
 
-.banner-content h3 {
-  /* width: 50%; */
-}
-
 .banner-area .banner-img {
   background-image: url("assets/home/host.png");
   position: absolute;
@@ -286,7 +282,6 @@ section p {
 }
 
 .banner-area h1 {
-  /* display: inline; */
   font-size: 84px;
   line-height: 1em;
   font-family: "Steradian-bold";
@@ -712,7 +707,6 @@ ul.mockup-content {
   }
 }
 
-
 /*review area*/
 .review-area {
   padding-top: 0;
@@ -721,7 +715,6 @@ ul.mockup-content {
 
 ul.review-content {
   width: 100%;
-
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -740,8 +733,6 @@ ul.review-content {
   background-position: 60% 15%;
 }
 
-
-
 .review-right {
   flex-basis: 60%;
   background-image: url(assets/home/split/host.jpeg);
@@ -758,7 +749,6 @@ ul.review-content {
   align-content: center;
   justify-content: center;
   flex-basis: 33%;
-
 }
 
 .review-area p {
@@ -791,9 +781,8 @@ ul.review-content {
 }
 
 @media (max-width: 1000px) {
-
   .review-area {
-  padding: 0;
+    padding: 0;
   }
 
   .review-left,
@@ -801,9 +790,7 @@ ul.review-content {
     flex-basis: 100%;
   }
 
-  .review-content li {
-
-  }
+  .review-content li {}
 
   .review-left {
     order: 2;
@@ -813,139 +800,8 @@ ul.review-content {
   .review-right {
     order: 1;
     border-radius: 0;
-
   }
 }
-
-/*carousel area*/
-/* .carousel-area {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: center;
-  height: 70vh;
-  padding-bottom: 0;
-  padding-top: 0;
-}
-
-ul .gallery-content {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.review-container {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #fff;
-  border-radius: 30px;
-  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 15%));
-  flex-basis: 20%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.review-container h2, .review-container p {
-  margin-left: 25px;
-  margin-right: 20px;
-}
-
-.title-container {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-  margin-right: 20px;
-}
-
-.review-container h2 {
-  font-family: "Steradian-bold";
-  font-size: 22px;
-  line-height: 1em;
-}
-
-.review-container p {
-  font-family: "Steradian-regular";
-  margin-top: 20px;
-}
-
-.review-container span {
-  font-family: "Steradian-regular";
-  font-size: 16px;
-  color: #999999;
-  float: right;
-  background: none;
-}
-
-.review-dot {
-  margin-top: 10px;
-  color: #29E4ED;
-}
-
-.review-dot i {
-  padding-right: 3px;
-}
-
-.review-location {
-  color: #999999;
-}
-
-@media (max-width: 1000px) {
-  .carousel-area {
-    height: 60vh;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  .review-container {
-    flex-basis: 80%;
-    margin-left: 0;
-  }
-
-  .review-container h2 {
-    padding-top: 0px;
-  }
-}
-
-@media (max-width: 700px) {
-  .carousel-area {
-    height: 65vh;
-  }
-}
-
-@media (max-width: 479px) {
-  .review-container {
-    flex-basis: 100%;
-    margin-left: 0;
-    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 15%));
-  }
-}
-
-@media (max-width: 425px) {
-  .carousel-area {
-    height: 80vh;
-  }
-
-  .review-container {
-    margin-top: 0;
-  }
-} */
 
 /*partner area*/
 .partner {
@@ -1050,13 +906,6 @@ ul.partner-content {
   }
 }
 
-/* @media (max-width:768px) {
-  .partner-content li {
-    padding: 0;
-    flex-basis: 100%;
-    margin-bottom: 65px;
-  }
-} */
 /*cta area*/
 .cta {
   padding: 0;
@@ -1137,11 +986,6 @@ ul.partner-content {
     font-size: 16px;
   }
 
-  /* .cta-content img {
-    width: 40%;
-    flex-basis: 40%;
-    margin: 0;
-  } */
   #cta-btn {
     text-align: center;
     margin-top: 10px;
@@ -1398,7 +1242,6 @@ h2 {
 }
 
 @media (max-width: 475px) {
-
   .b-footer {
     padding-top: 25px;
   }
