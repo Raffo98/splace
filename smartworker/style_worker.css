@@ -218,10 +218,12 @@ navbarText p {
   }
 
   a.login-btn {
+    display: block;
     margin: 0;
     padding: 0;
     background: none;
     color: #fff;
+    pointer-events: none;
   }
 
   /* .navbarLine {

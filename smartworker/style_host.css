@@ -218,19 +218,13 @@ navbarText p {
   }
 
   a.login-btn {
+    display: block;
     margin: 0;
     padding: 0;
     background: none;
     color: #fff;
+    pointer-events: none;
   }
-
-  /* .navbarLine {
-    border-bottom: 1px solid white;
-    width: 100%;
-    order: 3;
-    padding: 0;
-    margin: 0 59px;
-  } */
 }
 
 /*banner area*/
